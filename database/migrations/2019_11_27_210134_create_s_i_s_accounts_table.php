@@ -30,7 +30,7 @@ class CreateSISAccountsTable extends Migration
 
             $table->timestamps();
         });
-    }
+    } 
 
     /**
      * Reverse the migrations.
