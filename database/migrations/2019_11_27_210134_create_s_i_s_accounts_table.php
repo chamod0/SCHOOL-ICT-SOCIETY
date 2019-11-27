@@ -7,7 +7,8 @@ use Illuminate\Support\Facades\Schema;
 class CreateSISAccountsTable extends Migration
 {
     /**
-     * Run the migrations.
+     * Run the migrations.g
+     * 
      *
      * @return void
      */
