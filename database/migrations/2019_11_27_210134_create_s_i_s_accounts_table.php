@@ -16,17 +16,17 @@ class CreateSISAccountsTable extends Migration
     {
         Schema::create('s_i_s_accounts', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->text('SchoolNmae');
-            $table->text('EducationZone');
-            $table->text('District');
-            $table->text('PresidentOfSociety');
-            $table->text('SecretryOfSociety');
-            $table->text('TreasurerOfSociety');
-            $table->text('TeacherInCharge');
-            $table->text('Email');
-            $table->text('password');   
-            $table->text('SchoolFBProfile');
-            $table->timestamps('Date');
+            $table->string('SchoolNmae');
+            $table->string('EducationZone');
+            $table->string('District');
+            $table->string('PresidentOfSociety');
+            $table->string('SecretryOfSociety');
+            $table->string('TreasurerOfSociety');
+            $table->string('TeacherInCharge');
+            $table->string('Email');
+            $table->string('password');   
+            $table->string('SchoolFBProfile');
+            $table->timestamp('Date');
             $table->boolean('IsActive');
 
             $table->timestamps();
