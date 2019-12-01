@@ -3,7 +3,7 @@
     <div class="sidebar-wrapper">
         <div class="logo">
             <a href="" class="simple-text">
-                JavaShop Admin
+                SIS Admin
             </a>
         </div>
 

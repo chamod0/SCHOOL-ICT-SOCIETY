@@ -98,11 +98,24 @@ SISmanage
                             <th>Registed_at</th>
                             <td>{{ $accdetails->Date}}</td>
                         </tr>
-                              <tr>
+                        <tr>
                             <th>updated_at</th>
                             <td>{{ $accdetails->updated_at}}</td>
                         </tr>
 
+                       
+                            <tr>
+                            <th>Status</th>
+                            <td>
+                            
+                            @if($accdetails -> IsActive)
+                                            <span class="label label-success">Confirmed</span>
+                                            @else
+                                            <span class="label label-warning">Pending</span>
+                                             @endif
+                                </td>
+
+                            </tr>
                         </thead>
                     </table>
                 </div>
@@ -118,73 +131,38 @@ SISmanage
                     <table class="table table-striped">
                         <thead>
                         <tr>
-                            <th>ID</th>
-                            <th>Date</th>
-                            <th>Address</th>
-                            <th>Status</th>
-                            <th>Action</th>
+                        <th>ID</th>
+                            <th>EvantLink</th>
+                         
+                            <th>Header</th>
+                            <th>Disciption</th>
+                            <th>created_at</th>
+                            <th>updated_at</th>
                         </tr>
                         </thead>
                         <tbody>
                                      
-                       
+                        @foreach($evants as $event)
                             <tr>
-                       
-                                <td>{{ dd($evants)}}</td>
-                                <td></td>
-                                <td></td>
+                            <td>{{($event->id)}}</td>
+                                <td>{{($event->EvantLink)}}</td>
+                                <td>{{($event->Header)}}</td>
+                               
+                                <td>{{($event->Disciption)}}</td>
+                                <td>{{($event->created_at)}}</td>
+                                <td>{{($event->updated_at)}}</td>
                                 
                             </tr>
-                          
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-12">
-            <div class="card">
-                <div class="header">
-                    <h4 class="title">Account Details</h4>
-                    <p class="category">Account details</p>
-                </div>
-                <div class="content table-responsive table-full-width">
-                    <table class="table table-striped">
-                        <thead>
-                        <tr>
-                            <th>ID</th>
-                            <th>Date</th>
-                            <th>Address</th>
-                            <th>Status</th>
-                            <th>Action</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td>
-                                    @if ($accdetails->IsAcrive)
-                                        <span class="label label-success">Confirmed</span>
-                                    @else
-                                        <span class="label label-warning">Pending</span>
-                                    @endif
-                                </td>
-                                <td>
-                                    @if ($accdetails->IsAcrive)
-                                    {{ link_to_route('SIS.pending','Pending', $accdetails->id, ['class'=>'btn btn-warning btn-sm']) }}
-                                @else
-                                    {{ link_to_route('SIS.confirm','Confirm', $accdetails->id, ['class'=>'btn btn-success btn-sm']) }}
-                                @endif  </td>
-                            </tr>
+                            @endforeach
                         </tbody>
                     </table>
                 </div>
             </div>
         </div>
         
+        
     </div>
 
-    <a href="{{ url('/admin/orders') }}" class="btn btn-success">Back to Orders</a>
+    <a href="{{ url('/admin/manageSISAccount') }}" class="btn btn-success">Back to Orders</a>
     
 @endsection

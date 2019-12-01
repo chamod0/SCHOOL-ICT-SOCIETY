@@ -13,8 +13,8 @@ SISmanage
                     @include('admin.layout.message')
                         <div class="card">
                             <div class="header">
-                                <h4 class="title">Orders</h4>
-                                <p class="category">List of all orders</p>
+                                <h4 class="title">Manage Account</h4>
+                                <p class="category">List of all Account</p>
                             </div>
                             <div class="content table-responsive table-full-width">
                                 <table class="table table-striped">

@@ -34,8 +34,9 @@ class SISAccountController extends Controller
     }
    public function show($id){
     $accdetails = SISAccount::find($id);
-    $evants = Evants::find($id);
+    $evants = Evants::all()->where('SISid', '==', $id);
     return view('admin.SISAccount.SISAccountDetails',compact('accdetails','evants'));
 
    }
+  
 }
