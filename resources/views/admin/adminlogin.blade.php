@@ -14,20 +14,23 @@
 <body>
 
     <div class="login-dark" style="height:1000px;">
-    @if ($errors->any())
-                            <div class="alert alert-danger">
-                                <ul>
-                                    @foreach($errors->all() as $error)
-                                        <li>{{ $error }}</li>
-                                    @endforeach
-                                </ul>
-                            </div>
-                        @endif
+   
+        @if ($errors->any())
+        <div class="alert alert-danger">
+            <ul>
+                @foreach($errors->all() as $error)
+                    <li>{{ $error }}</li>
+                @endforeach
+            </ul>
+        </div>
+    @endif
 
-                        @if ( session()->has('msg') )
-                            <div class="alert alert-success">{{ session()->get('msg') }}</div>
-                        @endif
+    @if ( session()->has('msg') )
+        <div class="alert alert-success">{{ session()->get('msg') }}</div>
+    @endif
+
         <form method="post"action="/admin/login" style="margin:0px;">
+       
         @csrf
             <h2 class="sr-only">Login Form</h2>
             <div class="illustration"><i class="icon ion-ios-locked-outline" ></i></div>

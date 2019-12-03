@@ -6,7 +6,14 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
 class AdminUserController extends Controller
+
+
 {
+
+    public function __construct()
+    {
+        $this->middleware('guest:admin')->except('logout');
+    }
     public function index(){
 
         return view('admin.adminlogin');
@@ -33,5 +40,12 @@ class AdminUserController extends Controller
 
         return redirect('/admin');
 
+    }
+    public function logout() {
+        auth()->guard('admin')->logout();
+
+        session()->flash('msg','You have been logged out');
+
+        return redirect('/admin/login');
     }
 }
