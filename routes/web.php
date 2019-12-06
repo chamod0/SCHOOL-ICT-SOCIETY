@@ -22,3 +22,8 @@ Route::get('/login','AdminUserController@index')->name('login');
 Route::post('/login', 'AdminUserController@store');
 
 });
+
+Route::get('/', 'Front\HomeController@index');
+
+Route::get('/SISRegister', 'Front\SISRegisterController@index');
+Route::post('/SISRegister', 'Front\SISRegisterController@SISRegister');
