@@ -9,6 +9,10 @@ use Illuminate\Support\Facades\Auth;
 class SISLoginController extends Controller
 {
 
+    public function __construct()
+    {
+        $this->middleware('guest')->except('logout');
+    }
     
     public function index(){
 
@@ -34,6 +38,16 @@ class SISLoginController extends Controller
         }
 
         return redirect('/SISprofile');
+
+    }
+
+    public function logout() {
+
+        auth()->logout();
+
+        session()->flash('msg','You have been logged out successfully');
+
+        return redirect('/SISLogin');
 
     }
    

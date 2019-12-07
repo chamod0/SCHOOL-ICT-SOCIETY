@@ -31,7 +31,9 @@ Route::post('/SISRegister', 'Front\SISRegisterController@SISRegister');
 Route::get('/SISLogin', 'Front\SISLoginController@index');
 Route::post('/SISLogin', 'Front\SISLoginController@store');
 
-Route::get('/SISprofile', function(){
+
+Route::get('/SISLogout', 'Front\SISLoginController@logout');
+Route::get('/SISProfile', function(){
 
 
     return 'wecome user';
