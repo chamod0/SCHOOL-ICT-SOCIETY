@@ -49,7 +49,7 @@
                     
                         
                        <div class="form-group form-group-icon">
-                        <input type="text" class="form-control border" placeholder="District" >
+                        <input type="text" class="form-control border" placeholder="District"name='District' >
                         <span class="text-danger">{{ $errors->first('District') }}</span>
                       </div>
                       <div class="form-group form-group-icon">
@@ -58,15 +58,15 @@
                           </div>
       
                       <div class="form-group form-group-icon">
-                        <input type="text" class="form-control border" placeholder="Address line 1" >
-                        <span class="text-danger">{{ $errors->first('District') }}</span>
-                        <input type="text" class="form-control border" placeholder="Address line 2" >
-                        <span class="text-danger">{{ $errors->first('District') }}</span>
+                        <input type="text" class="form-control border" placeholder="Address line 1" name="AddressL1" >
+                        <span class="text-danger">{{ $errors->first('AddressL1') }}</span>
+                        <input type="text" class="form-control border" placeholder="Address line 2" name="AddressL2">
+                        <span class="text-danger">{{ $errors->first('AddressL2') }}</span>
                       </div>
                         
                       <div class="form-group form-group-icon">
-                        <input type="text" class="form-control border" placeholder="Contact Number" >
-                        <span class="text-danger">{{ $errors->first('District') }}</span>
+                        <input type="text" class="form-control border" placeholder="Contact Number"name = "TelNo" >
+                        <span class="text-danger">{{ $errors->first('TelNo') }}</span>
                       </div>
       
                       <div class="form-group form-group-icon">
@@ -79,7 +79,7 @@
                           </div>
       
                       <div class="form-group form-group-icon">
-                        <input type="password" class="form-control border" placeholder="President of Society" name="PresidentOfSociety">
+                        <input type="text" class="form-control border" placeholder="President of Society" name="PresidentOfSociety">
                         <span class="text-danger">{{ $errors->first('PresidentOfSociety') }}</span>
                       </div>
                         
@@ -104,7 +104,7 @@
                       </div>
                        
                       <div class="form-group form-group-icon">
-                        <input type="password" class="form-control border" placeholder="Confirm-Password" name="password">
+                        <input type="password" class="form-control border" placeholder="Confirm-Password" name="password_confirmation">
                         <span class="text-danger">{{ $errors->first('password') }}</span>
                       </div>
       

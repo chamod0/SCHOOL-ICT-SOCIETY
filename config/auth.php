@@ -44,6 +44,10 @@ return [
             'driver' => 'session',
             'provider' => 'admins',
         ],
+        'sisaccount' => [
+            'driver' => 'session',
+            'provider' => 'sisaccounts',
+        ],
 
         'api' => [
             'driver' => 'token',
@@ -73,6 +77,10 @@ return [
         'users' => [
             'driver' => 'eloquent',
             'model' => App\User::class,
+        ],
+        's_i_saccount' => [
+            'driver' => 'eloquent',
+            'model' => App\SISAccount::class,
         ],
 
         'admins' => [

@@ -27,3 +27,12 @@ Route::get('/', 'Front\HomeController@index');
 
 Route::get('/SISRegister', 'Front\SISRegisterController@index');
 Route::post('/SISRegister', 'Front\SISRegisterController@SISRegister');
+
+Route::get('/SISLogin', 'Front\SISLoginController@index');
+Route::post('/SISLogin', 'Front\SISLoginController@store');
+
+Route::get('/SISprofile', function(){
+
+
+    return 'wecome user';
+});
