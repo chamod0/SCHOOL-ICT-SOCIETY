@@ -74,7 +74,7 @@
                         <span class="text-danger">{{ $errors->first('Email') }}</span>
                       </div>
                       <div class="form-group form-group-icon">
-                            <input type="text" class="form-control border" placeholder="School FaceBook Profile" name="SchoolFBProfile" >
+                            <input type="text" class="form-control border" placeholder="School FaceBook Page ID" name="SchoolFBProfile" >
                             <span class="text-danger">{{ $errors->first('SchoolFBProfile') }}</span>
                           </div>
       

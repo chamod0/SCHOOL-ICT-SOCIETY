@@ -37,7 +37,7 @@ class SISLoginController extends Controller
             ]);
         }
 
-        return redirect('/SISprofile');
+        return redirect('/SISProfile');
 
     }
 

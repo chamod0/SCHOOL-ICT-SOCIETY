@@ -124,8 +124,8 @@ SISmanage
         <div class="col-md-12">
             <div class="card">
                 <div class="header">
-                    <h4 class="title">Account Details</h4>
-                    <p class="category">Account details</p>
+                    <h4 class="title">Evant Details</h4>
+                    <p class="category">Evant details</p>
                 </div>
                 <div class="content table-responsive table-full-width">
                     <table class="table table-striped">

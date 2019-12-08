@@ -34,13 +34,13 @@
                         <span class="bg-warning icon-header mr-xl-2">
                           <i class="fa fa-envelope" aria-hidden="true"></i>
                         </span>
-                        <a href="mailto:info@yourdomain.com" class="mr-lg-4 mr-xl-6 text-white opacity-80">info@yourdomain.com</a>
+                        <a href="mailto:info@yourdomain.com" class="mr-lg-4 mr-xl-6 text-white opacity-80">schoolictsociety@gmail.com</a>
                       </li>
                       <li>
                         <span class="bg-success icon-header mr-xl-2">
                           <i class="fa fa-phone" aria-hidden="true"></i>
                         </span>
-                        <a href="tel:+1 234 567 8900" class="mr-lg-4 mr-xl-6 text-white opacity-80"> +1 234 567 8900 </a>
+                        <a href="tel:+1 234 567 8900" class="mr-lg-4 mr-xl-6 text-white opacity-80"> +94 112 785 141 </a>
                       </li>
                      
                     </ul>
@@ -86,7 +86,7 @@
         <nav class="navbar navbar-expand-md navbar-scrollUp navbar-sticky navbar-white">
           <div class="container">
             <a class="navbar-brand" href="index-2.html">
-              <img class="d-inline-block" src="assets/img/logo-school.png" alt="Kidz School">
+              <img class="d-inline-block" src="assets/img/SISLOGO.png" alt="Kidz School">
             </a>
     
           
@@ -318,11 +318,22 @@
                         </a>
                       </li>
                 
-                      <li class="nav-item dropdown bg-danger">
+                      <li class="nav-item dropdown ">
                             <a class="nav-link dropdown-toggle " href="javascript:void(0)" role="button"
                               data-toggle="dropdown">
-                              <i class="fa fa-list-ul nav-icon" aria-hidden="true"></i>
-                              <span>{{ auth()->check() ? auth()->user()->SchoolName : 'Account' }}</span>
+
+                              <i>
+                                  @if (auth()->check())
+                                  <img style="border-radius: 50%;" height="40" width="40" class="comment-avatar"   src="https://graph.facebook.com/{{auth()->check() ? auth()->user()->SchoolFBProfile : 'Account'}}/picture" alt="">
+                                 
+                              
+                                  <span >{{ auth()->check() ? auth()->user()->SchoolName : 'Account' }}</span>
+                              @else
+                              <i  class="fa fa-home nav-icon" ></i>
+                              <span >{{ auth()->check() ? auth()->user()->SchoolName : 'Account' }}</span>
+                              @endif
+                            </i>
+                           
                             </a>
                            
                             <ul class="dropdown-menu">
@@ -332,7 +343,7 @@
                                   <li> <a class="dropdown-item" href="{{  url('/SISRegister') }}">Sign Up</a></li>
                                    
                                 @else
-                                <li> <i class="fa fa-user"></i> <a class="dropdown-item" href="{{  url('/profile') }}"> Profile</a></li>
+                                <li> <i class="fa fa-user"></i> <a class="dropdown-item" href="{{  url('/SISProfile') }}"> Profile</a></li>
                                
                                     <hr>
                                     <li><i class="fa fa-lock"></i>     <a class="dropdown-item" href="{{  url('/SISLogout') }}">Logout</a></li>
