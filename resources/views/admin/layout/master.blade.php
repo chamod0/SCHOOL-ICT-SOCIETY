@@ -19,8 +19,11 @@
     {{Html::style('http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css')}}
     {{Html::style('https://fonts.googleapis.com/css?family=Muli:400,300')}}
     {{Html::style('assets/css/themify-icons.css')}}
+    
 
-  
+    {{ html::script('https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js')}}
+
+   
 
 </head>
 <body>

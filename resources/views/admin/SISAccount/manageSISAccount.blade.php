@@ -17,6 +17,11 @@ SISmanage
                                 <p class="category">List of all Account</p>
                             </div>
                             <div class="content table-responsive table-full-width">
+                                    <div class="form-group">
+                            <input type="text" name="search" id="search" class="form-control" placeholder="Search Customer Data" />
+                                </div>
+                                           <div class="table-responsive">
+                                            <h6 align="left">Total Data : <span id="total_records"></span></h6>
                                 <table class="table table-striped">
                                     <thead>
                                     <tr>
@@ -33,7 +38,7 @@ SISmanage
                                     @foreach($SISAccouts as $SISAccout)
                                     <tr>
                                         <td>{{$SISAccout -> id}}</td>
-                                        <td>{{$SISAccout -> SchoolName}}</td>
+                                        <td>{{ link_to_route('SIS.show',$SISAccout -> SchoolName, $SISAccout->id) }}</td>
                                         <td>{{$SISAccout -> Email}}</td>
                                         <td>{{$SISAccout -> EducationZone}}</td>
                                         <td>{{$SISAccout -> District}}</td>
@@ -77,5 +82,30 @@ SISmanage
 
 
                 </div>
-
+                <script>
+                        $(document).ready(function(){
+                        
+                         fetch_customer_data();
+                        
+                         function fetch_customer_data(query = '')
+                         {
+                          $.ajax({
+                           url:"{{ route('live_search.action') }}",
+                           method:'GET',
+                           data:{query:query},
+                           dataType:'json',
+                           success:function(data)
+                           {
+                            $('tbody').html(data.table_data);
+                            $('#total_records').text(data.total_data);
+                           }
+                          })
+                         }
+                        
+                         $(document).on('keyup', '#search', function(){
+                          var query = $(this).val();
+                          fetch_customer_data(query);
+                         });
+                        });
+                        </script>
 @endsection

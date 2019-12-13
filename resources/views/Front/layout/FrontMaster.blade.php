@@ -13,29 +13,28 @@
   <title>ICT SCHOOL Socaity</title>
 
   <!-- Plugins css Style -->
-  <link href="assets/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-  <link href="assets/plugins/no-ui-slider/nouislider.min.css" rel="stylesheet" />
-  <link href="assets/plugins/owl-carousel/owl.carousel.min.css" rel="stylesheet" media="screen">
-  <link href="assets/plugins/owl-carousel/owl.theme.default.min.css" rel="stylesheet" media="screen">
-  <link href="assets/plugins/fancybox/jquery.fancybox.min.css" rel="stylesheet" />
-  <link href="assets/plugins/isotope/isotope.min.css" rel="stylesheet" />
-  <link href="assets/plugins/animate/animate.css" rel="stylesheet">
-  <link href="assets/plugins/select2/css/select2.min.css" rel="stylesheet">
-  <link href="assets/plugins/revolution/css/settings.css" rel="stylesheet">
-  <link href="assets/plugins/revolution/css/layers.css" rel="stylesheet">
-  <link href="assets/plugins/revolution/css/navigation.css" rel="stylesheet">
-	
 
-
-
+  {{ Html::style('assets/plugins/font-awesome/css/font-awesome.min.css')}}
+  {{ Html::style('assets/plugins/no-ui-slider/nouislider.min.css')}}
+  {{ Html::style('assets/plugins/owl-carousel/owl.carousel.min.css')}}
+  {{ Html::style('assets/plugins/owl-carousel/owl.theme.default.min.css')}}
+  {{ Html::style('assets/plugins/fancybox/jquery.fancybox.min.css')}}
+  {{ Html::style('assets/plugins/isotope/isotope.min.css')}}
+  {{ Html::style('assets/plugins/animate/animate.css')}}
+  {{ Html::style('assets/plugins/select2/css/select2.min.css')}}
+  {{ Html::style('assets/plugins/revolution/css/settings.css')}}
+  {{ Html::style('assets/plugins/revolution/css/layers.css')}}
+  {{ Html::style('assets/plugins/revolution/css/navigation.css')}}
   <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Dosis:300,400,600,700|Open+Sans:300,400,600,700" rel="stylesheet">
-
+  {{ Html::style('https://fonts.googleapis.com/css?family=Dosis:300,400,600,700|Open+Sans:300,400,600,700')}}
   <!-- Custom css -->
-  <link href="assets/css/kidz.css" id="option_style" rel="stylesheet">
-
+  {{ Html::style('assets/css/kidz.css')}}
+  
   <!-- Favicon -->
-  <link href="assets/img/favicon.png" rel="shortcut icon">
+  {{ Html::style('assets/img/favicon.png')}}
+
+
+
 
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -44,9 +43,9 @@
   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 <![endif]-->
 
-<script src="http://parsleyjs.org/dist/parsley.js"></script>
+<script src="{{URL::asset('http://parsleyjs.org/dist/parsley.js')}}"></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-71155940-5" type="3160fe0de5fefd8beef53e99-text/javascript"></script>
+    <script async src="{{URL::asset('https://www.googletagmanager.com/gtag/js?id=UA-71155940-5')}}" type="3160fe0de5fefd8beef53e99-text/javascript"></script>
     <script type="3160fe0de5fefd8beef53e99-text/javascript">
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
@@ -54,8 +53,8 @@
     
       gtag('config', 'UA-71155940-5');
     </script>
-    <script src="assets/jquery.min.js"></script>
-<script src="assets/map.js"></script>
+    <script src="{{URL::asset('assets/jquery.min.js')}}"></script>
+<script src="{{URL::asset('assets/map.js')}}"></script>
 <style>
     
     #slmap{
@@ -114,7 +113,7 @@
           </div>
         </div>
       
-        <div class="pt-8 pb-7  bg-repeat" style="background-image: url(assets/img/background/footer-bg-img-1.png);">
+        <div class="pt-8 pb-7  bg-repeat" style="background-image: url({{URL::asset('assets/img/background/footer-bg-img-1.png')}});">
           <div class="container">
             <div class="row">
               <div class="col-sm-6 col-lg-3 col-xs-12">
@@ -157,8 +156,8 @@
                   <li class="mb-4 pb-4">
                     <div class="media">
                       <a class="mr-2" href="blog-single-left-sidebar.html">
-                        <img class="rounded-lg w-100 border-warning border-2 d-block" data-src="assets/img/blog/blog-sm-img5.jpg"
-                          src="assets/img/blog/blog-sm-img5.jpg" alt="blog-sm-img5.jpg">
+                        <img class="rounded-lg w-100 border-warning border-2 d-block" data-src="{{URL::asset('assets/img/blog/blog-sm-img5.jpg')}}"
+                          src="{{URL::asset('assets/img/blog/blog-sm-img5.jpg')}}" alt="blog-sm-img5.jpg">
                       </a>
                       <div class="media-body">
                         <h5 class="line-hight-16 mb-1">
@@ -173,8 +172,8 @@
                   <li class="mb-4 pb-4">
                     <div class="media">
                       <a class="mr-2" href="blog-single-left-sidebar.html">
-                        <img class="rounded-lg w-100 border-success border-2 d-block" data-src="assets/img/blog/blog-sm-img-12.jpg"
-                          src="assets/img/blog/blog-sm-img-12.jpg" alt="blog-sm-img-12.jpg">
+                        <img class="rounded-lg w-100 border-success border-2 d-block" data-src="{{URL::asset('assets/img/blog/blog-sm-img-12.jpg')}}"
+                          src="{{URL::asset('assets/img/blog/blog-sm-img-12.jpg')}}" alt="blog-sm-img-12.jpg">
                       </a>
                       <div class="media-body">
                         <h5 class="line-hight-16 mb-1">
@@ -373,7 +372,7 @@
       <div class="modal-body">
         <div class="row">
           <div class="col-sm-6 col-xs-12">
-            <img class="img-fluid d-block mx-auto" src="assets/img/products/products-preview01.jpg" alt="preview01.jpg">
+            <img class="img-fluid d-block mx-auto" src="{{URL::asset('assets/img/products/products-preview01.jpg')}}" alt="preview01.jpg">
           </div>
           <div class="col-sm-6 col-xs-12">
             <div class="product-single">
@@ -409,19 +408,19 @@
 </div>
 
 <!-- Javascript -->
-<script src="assets/plugins/jquery/jquery.min.js" type="3160fe0de5fefd8beef53e99-text/javascript"></script>
-<script src="assets/plugins/bootstrap/js/bootstrap.bundle.min.js" type="3160fe0de5fefd8beef53e99-text/javascript"></script>
-<script src="assets/plugins/owl-carousel/owl.carousel.min.js" type="3160fe0de5fefd8beef53e99-text/javascript"></script>
-<script src="assets/plugins/fancybox/jquery.fancybox.min.js" type="3160fe0de5fefd8beef53e99-text/javascript"></script>
-<script src="assets/plugins/isotope/isotope.min.js" type="3160fe0de5fefd8beef53e99-text/javascript"></script>
-<script src="assets/plugins/syotimer/jquery.syotimer.min.js" type="3160fe0de5fefd8beef53e99-text/javascript"></script>
-<script src="assets/plugins/select2/js/select2.min.js" type="3160fe0de5fefd8beef53e99-text/javascript"></script>
-<script src="assets/plugins/no-ui-slider/nouislider.min.js" type="3160fe0de5fefd8beef53e99-text/javascript"></script>
-<script src="assets/plugins/lazyestload/lazyestload.js" type="3160fe0de5fefd8beef53e99-text/javascript"></script>
-<script src="assets/plugins/velocity/velocity.min.js" type="3160fe0de5fefd8beef53e99-text/javascript"></script>
-<script src="assets/plugins/images-loaded/js/imagesloaded.pkgd.min.js" type="3160fe0de5fefd8beef53e99-text/javascript"></script>
-<script src="assets/plugins/revolution/js/jquery.themepunch.tools.min.js" type="3160fe0de5fefd8beef53e99-text/javascript"></script>
-<script src="assets/plugins/revolution/js/jquery.themepunch.revolution.min.js" type="3160fe0de5fefd8beef53e99-text/javascript"></script>
+<script src="{{URL::asset('assets/plugins/jquery/jquery.min.js')}}" type="3160fe0de5fefd8beef53e99-text/javascript"></script>
+<script src="{{URL::asset('assets/plugins/bootstrap/js/bootstrap.bundle.min.js')}}" type="3160fe0de5fefd8beef53e99-text/javascript"></script>
+<script src="{{URL::asset('assets/plugins/owl-carousel/owl.carousel.min.js')}}" type="3160fe0de5fefd8beef53e99-text/javascript"></script>
+<script src="{{URL::asset('assets/plugins/fancybox/jquery.fancybox.min.js')}}" type="3160fe0de5fefd8beef53e99-text/javascript"></script>
+<script src="{{URL::asset('assets/plugins/isotope/isotope.min.js')}}" type="3160fe0de5fefd8beef53e99-text/javascript"></script>
+<script src="{{URL::asset('assets/plugins/syotimer/jquery.syotimer.min.js')}}" type="3160fe0de5fefd8beef53e99-text/javascript"></script>
+<script src="{{URL::asset('assets/plugins/select2/js/select2.min.js')}}" type="3160fe0de5fefd8beef53e99-text/javascript"></script>
+<script src="{{URL::asset('assets/plugins/no-ui-slider/nouislider.min.js')}}" type="3160fe0de5fefd8beef53e99-text/javascript"></script>
+<script src="{{URL::asset('assets/plugins/lazyestload/lazyestload.js')}}" type="3160fe0de5fefd8beef53e99-text/javascript"></script>
+<script src="{{URL::asset('assets/plugins/velocity/velocity.min.js')}}" type="3160fe0de5fefd8beef53e99-text/javascript"></script>
+<script src="{{URL::asset('assets/plugins/images-loaded/js/imagesloaded.pkgd.min.js')}}" type="3160fe0de5fefd8beef53e99-text/javascript"></script>
+<script src="{{URL::asset('assets/plugins/revolution/js/jquery.themepunch.tools.min.js')}}" type="3160fe0de5fefd8beef53e99-text/javascript"></script>
+<script src="{{URL::asset('assets/plugins/revolution/js/jquery.themepunch.revolution.min.js')}}" type="3160fe0de5fefd8beef53e99-text/javascript"></script>
 
 <!-- Load revolution slider only on Local File Systems. The following part can be removed on Server -->
 <!-- 
@@ -430,14 +429,14 @@
 <script src="assets/plugins/revolution/js/extensions/revolution.extension.navigation.min.js"></script> 
 -->
 
-<script src="assets/plugins/wow/wow.min.js" type="3160fe0de5fefd8beef53e99-text/javascript"></script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDU79W1lu5f6PIiuMqNfT1C6M0e_lq1ECY" type="3160fe0de5fefd8beef53e99-text/javascript"></script>
+<script src="{{URL::asset('assets/plugins/wow/wow.min.js')}}" type="3160fe0de5fefd8beef53e99-text/javascript"></script>
+<script src="{{URL::asset('https://maps.googleapis.com/maps/api/js?key=AIzaSyDU79W1lu5f6PIiuMqNfT1C6M0e_lq1ECY')}}" type="3160fe0de5fefd8beef53e99-text/javascript"></script>
 
-<script src="assets/js/kidz.js" type="3160fe0de5fefd8beef53e99-text/javascript"></script>
-<link href="assets/options/optionswitch.css" rel="stylesheet">
-<script src="assets/options/optionswitcher.js" type="3160fe0de5fefd8beef53e99-text/javascript"></script>
-<script src="cdn-cgi/scripts/7089c43e/cloudflare-static/rocket-loader.min.js" data-cf-settings="3160fe0de5fefd8beef53e99-|49" defer=""></script></body>
-
+<script src="{{URL::asset('assets/js/kidz.js')}}" type="3160fe0de5fefd8beef53e99-text/javascript"></script>
+<link href="{{URL::asset('assets/options/optionswitch.css')}}" rel="stylesheet">
+<script src="{{URL::asset('assets/options/optionswitcher.js" type="3160fe0de5fefd8beef53e99-text/javascript')}}"></script>
+<script src="{{URL::asset('cdn-cgi/scripts/7089c43e/cloudflare-static/rocket-loader.min.js')}}" data-cf-settings="3160fe0de5fefd8beef53e99-|49" defer=""></script></body>
+<script async defer src="{{URL::asset('https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2')}}"></script>  
 
 <!-- Mirrored from themes.iamabdus.com/kidz/2.1/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 02 Dec 2019 12:34:17 GMT -->
 </html>

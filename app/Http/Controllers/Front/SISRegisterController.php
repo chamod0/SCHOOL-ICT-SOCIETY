@@ -54,6 +54,6 @@ class SISRegisterController extends Controller
 
        auth()->login($user);
 
-       return redirect('/SISprofile');
+       return redirect('/SISProfile');
     }
 }

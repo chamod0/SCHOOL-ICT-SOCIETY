@@ -17,19 +17,19 @@
             <li>
                 <a href="{{ url('/admin/manageSISAccount') }}">
                     <i class="ti-archive"></i>
-                    <p>Add Product</p>
+                    <p>SIS ACCOUNT</p>
                 </a>
             </li>
             <li>
                 <a href="{{ url('/admin/products') }}">
                     <i class="ti-view-list-alt"></i>
-                    <p>View Products</p>
+                    <p>Menteors</p>
                 </a>
             </li>
             <li>
                 <a href="{{ url('/admin/orders') }}">
                     <i class="ti-calendar"></i>
-                    <p>Orders</p>
+                    <p>Ambassador</p>
                 </a>
             </li>
             <li>

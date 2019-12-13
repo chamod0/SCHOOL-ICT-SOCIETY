@@ -85,7 +85,7 @@
         <!-- Navbar -->
         <nav class="navbar navbar-expand-md navbar-scrollUp navbar-sticky navbar-white">
           <div class="container">
-            <a class="navbar-brand" href="index-2.html">
+            <a class="navbar-brand" href="/">
               <img class="d-inline-block" src="assets/img/SISLOGO.png" alt="Kidz School">
             </a>
     
@@ -100,19 +100,19 @@
             <div class="collapse navbar-collapse" id="navbarContent">
               <ul class="navbar-nav ml-lg-auto">
                 <li class="nav-item dropdown bg-warning">
-                  <a class="nav-link dropdown-toggle  active " href="javascript:void(0)"
+                  <a class="nav-link dropdown-toggle " href="/"
                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <i class="fa fa-home nav-icon" aria-hidden="true"></i>
                     <span>Home</span>
                   </a>
                
                 </li>
-    
+                  
                 <li class="nav-item dropdown bg-danger">
                   <a class="nav-link dropdown-toggle " href="javascript:void(0)" role="button"
                     data-toggle="dropdown">
                     <i class="fa fa-list-ul nav-icon" aria-hidden="true"></i>
-                    <span>Pages</span>
+                    <span>ICT Societies</span>
                   </a>
                  
                   <ul class="dropdown-menu">
@@ -125,7 +125,7 @@
                     </li>
                     
                     <li>
-                      <a class="dropdown-item  scrolling" href="#courses">List of Societies</a>
+                      <a class="dropdown-item  scrolling" href="/#courses">List of Societies</a>
                     </li>
                     <li>
                       <a class="dropdown-item " href="/SISRegister">Register a Society</a>
@@ -135,17 +135,60 @@
                     
                   </ul>
                 </li>
-    
+                <li class="nav-item dropdown bg-info">
+                    <a class="nav-link dropdown-toggle " href="javascript:void(0)" id="stores"
+                      role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <i class="fa fa-pencil-square-o nav-icon" aria-hidden="true"></i>
+                      <span>Abut Us</span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="stores">
+                     
+                      <li>
+                        <a class="dropdown-item " href="product-single.html">Our Mission</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item " href="product-category.html">Our History</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item " href="product-cart.html">Leadership</a>
+                      </li>
+                      <li>
+                          <a class="dropdown-item " href="product-cart.html">Contact Us</a>
+                        </li>
+                        
+                
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown bg-purple">
+                      <a class="nav-link dropdown-toggle " href="javascript:void(0)" id="stores"
+                        role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-calendar nav-icon" aria-hidden="true"></i>
+                        <span>Get Involved</span>
+                      </a>
+                      <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="stores">
+                          <li>
+                              <a class="dropdown-item " href="product-cart.html">Organizations</a>
+                            </li>
+                        <li>
+                            <a class="dropdown-item " href="product-cart.html">Individuals</a>
+                          </li>
+                          <li>
+                              <a class="dropdown-item " href="product-cart.html">Volunteers</a>
+                            </li>
+                            
+                     
+                      </ul>
+                    </li>
                 <li class="nav-item dropdown mega-dropdown bg-success">
                   <a class="nav-link dropdown-toggle " href="#" role="button"
                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <i class="fa fa-file-text-o nav-icon" aria-hidden="true"></i>
-                    <span>Courses</span>
+                    <span>Resources</span>
                   </a>
                   <div class="dropdown-menu row">
                     <div class="col-12 col-md-3">
                       <ul class="list-unstyled">
-                        <li>Courses Grid</li>
+                        <li>Digital Education</li>
                         <li><a class="" href="courses-grid-full.html">Courses
                             Grid Fullwidth</a></li>
                         <li><a class="" href="courses-grid-left-sidebar.html">Courses
@@ -157,7 +200,7 @@
     
                     <div class="col-12 col-md-3">
                       <ul class="list-unstyled">
-                        <li>Courses List</li>
+                        <li>Technology</li>
                         <li><a class="" href="course-list-fullwidth.html">Courses
                             List Fullwidth</a></li>
                         <li><a class="" href="course-list-left-sidebar.html">Courses
@@ -169,7 +212,7 @@
     
                     <div class="col-12 col-md-3">
                       <ul class="list-unstyled">
-                        <li>Single Course</li>
+                        <li>Innovation</li>
                         <li><a class="" href="course-single.html">Single Course
                             Fullwidth</a></li>
                         <li><a class="" href="course-single-left-sidebar.html">Single
@@ -181,7 +224,7 @@
     
                     <div class="col-12 col-md-3">
                       <ul class="list-unstyled">
-                        <li>Checkout</li>
+                        <li>Entrepreneurship</li>
                         <li><a class="" href="product-checkout-step-1.html">Personal
                             Info</a></li>
                         <li><a class="" href="product-checkout-step-2.html">Payment
@@ -192,123 +235,14 @@
                   </div>
                 </li>
     
-                <li class="nav-item dropdown bg-info">
-                  <a class="nav-link dropdown-toggle " href="javascript:void(0)" id="stores"
-                    role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <i class="fa fa-pencil-square-o nav-icon" aria-hidden="true"></i>
-                    <span>Store</span>
-                  </a>
-                  <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="stores">
-                    <li>
-                      <a class="dropdown-item
-                       ||
-                       ||
-                      
+               
     
-                      "
-                        href="javascript:void(0)">Products<i class="fa fa-chevron-right" aria-hidden="true"></i></a>
-                      <ul class="sub-menu">
-                        <li><a class="" href="products.html">Products Fullwidth</a></li>
-                        <li><a class="" href="product-left-sidebar.html">Products
-                            Left Sidebar</a></li>
-                        <li><a class="" href="product-right-sidebar.html">Products
-                            Right Sidebar</a></li>
-                      </ul>
-                    </li>
-                    <li>
-                      <a class="dropdown-item " href="product-single.html">Single
-                        Product</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item " href="product-category.html">Product
-                        Categories</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item " href="product-cart.html">Cart</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item
-                         ||
-                         ||
-                        
-                        "
-                        href="javascript:void(0)">Checkout<i class="fa fa-chevron-right" aria-hidden="true"></i></a>
-                      <ul class="sub-menu">
-                        <li>
-                          <a class="" href="product-checkout-step-1.html">Personal
-                            Info</a>
-                        </li>
-                        <li>
-                          <a class="" href="product-checkout-step-2.html">Payment
-                            Info</a>
-                        </li>
-                        <li>
-                          <a class="" href="product-checkout-step-3.html">Confirmation</a>
-                        </li>
-                      </ul>
-                    </li>
-                  </ul>
-                </li>
-    
-                <li class="nav-item dropdown bg-purple">
-                  <a class="nav-link dropdown-toggle " href="javascript:void(0)" id="stores"
-                    role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <i class="fa fa-calendar nav-icon" aria-hidden="true"></i>
-                    <span>Blog</span>
-                  </a>
-                  <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="stores">
-                    <li>
-                      <a class="dropdown-item
-                         ||
-                         ||
-                        
-                      "
-                        href="javascript:void(0)">Blog Grid<i class="fa fa-chevron-right" aria-hidden="true"></i></a>
-                      <ul class="sub-menu">
-                        <li><a class="" href="blog-grid.html">Blog Grid Fullwidth</a></li>
-                        <li><a class="" href="blog-grid-left-sidebar.html">Blog
-                            Grid Left Sidebar</a></li>
-                        <li><a class="" href="blog-grid-right-sidebar.html">Blog
-                            Grid Right Sidebar</a></li>
-                      </ul>
-                    </li>
-                    <li>
-                      <a class="dropdown-item
-                         ||
-                         ||
-                        "
-                        href="javascript:void(0)">Blog List<i class="fa fa-chevron-right" aria-hidden="true"></i></a>
-                      <ul class="sub-menu">
-                        <li><a class="" href="blog-list.html">Blog List Fullwidth</a></li>
-                        <li><a class="" href="blog-list-left-sidebar.html">Blog
-                            List Left Sidebar</a></li>
-                        <li><a class="" href="blog-list-right-sidebar.html">Blog
-                            List Right Sidebar</a></li>
-                      </ul>
-                    </li>
-                    <li>
-                      <a class="dropdown-item
-                         ||
-                         ||
-                        
-                      "
-                        href="javascript:void(0)">Single Blog<i class="fa fa-chevron-right" aria-hidden="true"></i></a>
-                      <ul class="sub-menu">
-                        <li><a class="" href="blog-single.html">Blog Single
-                            Fullwidth</a></li>
-                        <li><a class="" href="blog-single-left-sidebar.html">Blog
-                            Single Left Sidebar</a></li>
-                        <li><a class="" href="blog-single-right-sidebar.html">Blog
-                            Single Right Sidebar</a></li>
-                      </ul>
-                    </li>
-                  </ul>
-                </li>
+                
     
                 <li class="nav-item dropdown bg-pink">
                   <a class="nav-link dropdown-toggle " href="component-default.html">
-                    <i class="fa fa-home nav-icon" ></i>
-                    <span>components</span>
+                    <i class="fa fa-paper-plane nav-icon" ></i>
+                    <span>Contributors</span>
                   </a>
                 </li>
                 <li class="nav-item dropdown">
