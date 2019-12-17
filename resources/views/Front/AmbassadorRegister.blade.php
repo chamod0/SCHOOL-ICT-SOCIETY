@@ -38,7 +38,7 @@
 
                 <div class="form-group form-group-icon col-lg-6">
                   <label for="last-name">Last Name</label>
-                  <input type="text" class="form-control border-info rounded-sm" id="last-name" name="LasttName" >
+                  <input type="text" class="form-control border-info rounded-sm" id="last-name" name="LastName" >
                 </div>
               </div>
               <div class="row">
@@ -141,9 +141,9 @@
                   </div>
                   <div class="row">
                         <div class="form-group form-group-icon col-lg-12">
-                                                        <label for="country">Image</label>
-                                                        <input type="text" class="form-control border-info rounded-sm" id="country" name="img">
-                                                      </div>
+                          <label for="country">Image</label>
+                      <input type="text" class="form-control border-info rounded-sm" id="country" name="img">
+                   </div>
                          </div>
 
 

@@ -3,8 +3,11 @@
 namespace App\Http\Controllers;
 use App\SISAccount;
 use App\Evants;
+use App\Mail\WelcomeMail;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
+
 
 class SISAccountController extends Controller
 {
@@ -16,10 +19,10 @@ class SISAccountController extends Controller
     public function confirm($id){
 
         $accdetails = SISAccount::find($id);
-    
+        Mail::to($accdetails->Email)->send(new WelcomeMail($accdetails));
         $accdetails -> update(['IsActive' => 1]);
 
-        session()->flash('msg','Order has been confirmed');
+        session()->flash('msg','Request has been confirmed');
         return redirect('/admin/manageSISAccount');
 
     }
@@ -29,7 +32,7 @@ class SISAccountController extends Controller
 
         $accdetails -> update(['IsActive' => 0]);
 
-        session()->flash('msg','Order has been pending');
+        session()->flash('msg','Request has been pending');
         return redirect('/admin/manageSISAccount');
 
     }

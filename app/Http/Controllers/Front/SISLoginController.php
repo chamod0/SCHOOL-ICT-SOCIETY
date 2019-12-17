@@ -15,6 +15,7 @@ class SISLoginController extends Controller
     }
     
     public function index(){
+        
 
         return view('Front.SISLogin');
     }
@@ -36,7 +37,7 @@ class SISLoginController extends Controller
                 'message' => 'Wrong credentials please try again'
             ]);
         }
-
+      
         return redirect('/SISProfile');
 
     }

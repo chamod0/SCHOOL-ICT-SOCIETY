@@ -4,7 +4,10 @@ namespace App\Http\Controllers\Front;
 
 use App\Mentor;
 use App\Http\Controllers\Controller;
+use App\Mail\WelcomeMail;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
+
 
 class MentorController extends Controller
 {
@@ -15,6 +18,7 @@ class MentorController extends Controller
         return view('Front.mentor');
     }
 
+   
     
 
     public function MentorRegister(Request $request){
@@ -64,5 +68,39 @@ class MentorController extends Controller
         return redirect('/');
      }
      
+     //admin------------------------------------------
+     public function admin(){
+        $mentors=Mentor::all();
+        
+        
+        
+        return view('admin.MenteorAccount.manageMentor',compact('mentors'));
+    }
+    public function confirm($id){
+
+        $accdetails = Mentor::find($id);
+        Mail::to($accdetails->Email)->send(new WelcomeMail($accdetails));
+        $accdetails -> update(['IsActive' => 1]);
+
+        session()->flash('msg','Mentor Request has been confirmed');
+        return redirect('admin/Menteors');
+
+    }
+    public function Pending($id){
+
+        $accdetails = Mentor::find($id);
+
+        $accdetails -> update(['IsActive' => 0]);
+
+        session()->flash('msg','Mentor Request has been pending');
+        return redirect('admin/Menteors');
+
+    }
+   public function show($id){
+    $accdetails = Mentor::find($id);
     
+    return view('admin.MenteorAccount.manageMentor',compact('accdetails'));
+
+   }
+
 }

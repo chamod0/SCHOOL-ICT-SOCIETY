@@ -32,7 +32,7 @@
   
   <!-- Favicon -->
   {{ Html::style('assets/img/favicon.png')}}
-
+  {{ Html::style('https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.2.7/fullcalendar.min.css')}}
 
 
 
@@ -64,6 +64,29 @@
         fill:#4caf50;
     }
 </style>
+<style>
+    .box14{position:relative}
+    .box15,.box17,.box18{box-shadow:0 0 5px #7e7d7d;text-align:center}
+    .box14:before{content:"";width:100%;height:100%;background:rgba(0,0,0,.5);position:absolute;top:0;left:0;opacity:0;transition:all .35s ease 0s}
+    .box14:hover:before{opacity:1}
+    .box14 img{width:100%;height:auto}
+    .box14 .box-content{width:90%;height:90%;position:absolute;top:5%;left:5%}
+    .box14 .box-content:after,.box14 .box-content:before{content:"";position:absolute;top:0;left:0;bottom:0;right:0;opacity:0;transition:all .7s ease 0s}
+    .box14 .box-content:before{border-bottom:1px solid rgba(255,255,255,.5);border-top:1px solid rgba(255,255,255,.5);transform:scale(0,1);transform-origin:0 0 0}
+    .box14 .box-content:after{border-left:1px solid rgba(255,255,255,.5);border-right:1px solid rgba(255,255,255,.5);transform:scale(1,0);transform-origin:100% 0 0}
+    .box14:hover .box-content:after,.box14:hover .box-content:before{opacity:1;transform:scale(1);transition-delay:.15s}
+    .box14 .title{font-size:21px;font-weight:700;color:#fff;margin:15px 0;opacity:0;transform:translate3d(0,-50px,0);transition:transform .5s ease 0s}
+    .box14:hover .title{opacity:1;transform:translate3d(0,0,0)}
+    .box14 .post{font-size:14px;color:#fff;padding:10px;background:#d79719;opacity:0;border-radius:0 19px;transform:translate3d(0,-50px,0);transition:all .7s ease 0s}
+    .box14 .icon,.box15 .icon{padding:0;list-style:none}
+    .box14:hover .post{opacity:1;transform:translate3d(0,0,0);transition-delay:.15s}
+    .box14 .icon{width:100%;margin:0;position:absolute;bottom:-10px;left:0;opacity:0;z-index:1;transition:all .7s ease 0s}
+    .box14:hover .icon{bottom:20px;opacity:1;transition-delay:.15s}
+    .box14 .icon li a{display:block;width:40px;height:40px;line-height:40px;border:1px solid #fff;border-radius:0 16px;font-size:14px;color:#fff;margin-right:5px;transition:all .4s ease 0s}
+    .box14 .icon li a:hover{background:#d79719;border-color:#d79719}
+    @media only screen and (max-width:990px){.box14{margin-bottom:30px}
+    }
+    </style>
 </head>
 
 <body id="body" class="up-scroll">
@@ -73,16 +96,7 @@
   <!-- ====================================
   ——— PRELOADER
   ===================================== -->
-  <div id="preloader" class="smooth-loader-wrapper">
-    <div class="smooth-loader">
-      <div class="loader">
-        <span class="dot dot-1"></span>
-        <span class="dot dot-2"></span>
-        <span class="dot dot-3"></span>
-        <span class="dot dot-4"></span>
-      </div>
-    </div>
-  </div>
+
 @include('Front.layout.nav')
   <div class="main-wrapper home">
 
@@ -118,7 +132,7 @@
             <div class="row">
               <div class="col-sm-6 col-lg-3 col-xs-12">
                 <a class="mb-6 d-block" href="index-2.html">
-                  <img class="img-fluid d-inline-block w-50 lazyestload" data-src="assets/img/logo-footer.png" src="assets/img/logo-footer.png">
+                  <img class="img-fluid d-inline-block w-50 lazyestload" data-src="{{URL::asset('assets/img/logo-footer.png')}}" src="{{URL::asset('assets/img/logo-footer.png')}}">
                 </a>
                 <p class="mb-6">Local groups of school students with a passion for technology working together to shape the school ICT landscape in Sri Lanka and worldwide.</p>
                 
@@ -221,15 +235,15 @@
           <div class="container">
             <div class="row py-4 align-items-center">
               <div class="col-sm-12 col-xs-7 order-7 align-content-lg-center">
-                <p align="center" class="copyright-text align-content-center"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;© All rights reserved Ministry Of Education | Powered by ICTA</p>
+                <p class="copyright-text align-content-center text-center">
+                  © All rights reserved Ministry Of Education | Powered by ICTA</p>
               </div>
       
-              <div align="right" class="col-sm-7 col-xs-10">
-                <img src="assets/img/logo.png" width="70" >
-                <img src="assets/img/icta logo_white-01.png" width="80">&nbsp;&nbsp;
-                <img src="assets/img/BRANCH-LOGO-2.png" width="30">&nbsp;&nbsp;&nbsp;
-                <img src="assets/img/Sri_Lanka.png" width="20">
-              </div>
+              <div align="right" class="col-sm-8 col-xs-20">
+                <img src="{{URL::asset('assets/img/logo.png')}}" width="90" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <img src="{{URL::asset('assets/img/ICTA.png')}}" width="90">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <img src="{{URL::asset('assets/img/BRANCH-LOGO-2.png')}}" width="40">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <img src="{{URL::asset('assets/img/srilankaLogo.png')}}" width="30">
             </div>
           </div>
         </div>
@@ -437,7 +451,9 @@
 <script src="{{URL::asset('assets/options/optionswitcher.js" type="3160fe0de5fefd8beef53e99-text/javascript')}}"></script>
 <script src="{{URL::asset('cdn-cgi/scripts/7089c43e/cloudflare-static/rocket-loader.min.js')}}" data-cf-settings="3160fe0de5fefd8beef53e99-|49" defer=""></script></body>
 <script async defer src="{{URL::asset('https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2')}}"></script>  
-
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.2.7/fullcalendar.min.js"></script>
 <!-- Mirrored from themes.iamabdus.com/kidz/2.1/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 02 Dec 2019 12:34:17 GMT -->
 </html>
 

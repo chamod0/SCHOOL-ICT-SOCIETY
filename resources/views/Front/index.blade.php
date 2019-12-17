@@ -2,7 +2,19 @@
 
 @section('content')
 
-
+ <!-- ====================================
+  ——— PRELOADER
+  ===================================== -->
+  <div id="preloader" class="smooth-loader-wrapper">
+    <div class="smooth-loader">
+      <div class="loader">
+        <span class="dot dot-1"></span>
+        <span class="dot dot-2"></span>
+        <span class="dot dot-3"></span>
+        <span class="dot dot-4"></span>
+      </div>
+    </div>
+  </div>
 <!--====================================
 ——— BEGIN MAIN SLIDE LIST
 ===================================== -->
@@ -349,14 +361,14 @@
         </div>
   
         <div class="col-sm-3">
-                  <a href="#teachers">
+                  <a href="#Ambassador">
                       <div class="card bg-success card-hover scrolling">
                           <div class="card-body text-center p-0">
                               <div class="card-icon-border-large border-success">
                                   <i class="fa fa-rocket" aria-hidden="true"></i>
                               </div>
                               <h2 class="text-white font-size-32 pt-1 pt-lg-5 pb-2 pb-lg-6 mb-0 font-dosis">Become a SIS Ambassador</h2>
-                              <a href="#teachers" class="btn-scroll-down d-block pb-4 pb-lg-5">
+                              <a href="#Ambassador" class="btn-scroll-down d-block pb-4 pb-lg-5">
                                   <i class="fa fa-chevron-down" aria-hidden="true"></i>
                               </a>
                           </div>
@@ -520,18 +532,21 @@
         </div>
       </div>
     </div>
+    
   </section>
   
   <!-- ====================================
   ———	CALL TO ACTION
   ===================================== -->
-  <section class="py-9 bg-parallax" style="background-image: url(assets/img/background/background-img-1.jpg);">
+  <section class="py-0 bg-parallax " style=" background-image: url(assets/img/banner/slider-1/img-3.jpg);">
+    
+    <div style="background-color:rgba(0,0,0,0.6); ">
       <div class="container">
       <div class="wow fadeInUp">
         <div class="section-title justify-content-center">
             <a href="contact-us.html" class="btn btn-danger shadow-sm text-uppercase mt-4">
                <h2 class="text-white text-center">HOW CAN I BE A MEMBER?</h2>
-              </a>
+              </a><br><br><br><br><br><br>
           
         </div>
         <div class="text-center">
@@ -541,7 +556,7 @@
               <i class="fa fa-phone mr-2" aria-hidden="true"></i>APPLY TO REGISTER A CLUB
             </a>
           </div>
-       
+          <div class="py-4"></div>
   </section>
   <section class="py-9" id="courses">
 
@@ -567,7 +582,7 @@
        
      </div>
                 <div class="col-sm-9 col-md-6 col-lg-7 " ">
-                        <div class="pull-right wow fadeInUp"> 
+                        <div class="pull-right wow fadeInRight"> 
                         @include('Front.layout.map')
                     </div>
                     </div>
@@ -577,7 +592,7 @@
                 </div>
             </div>
 
-            
+          </div>
     </section>
   <!-- ====================================
   ———	COURSES SECTION
@@ -655,8 +670,10 @@
   <!-- ====================================
   ———	GALLERY
   ===================================== -->
-  <section class="pt-9 pb-7" id="blog">
+  
+  <section class="pt-9 pb-7" id="Ambassador">
     <div class="container">
+       
       <div class="section-title justify-content-center mb-2 mb-md-8 wow fadeInUp">
         <span class="shape shape-left bg-danger"></span>
         <h2 class="text-danger">Ambassador</h2>
@@ -664,67 +681,57 @@
       </div>
   
       <div class="team-slider owl-carousel owl-theme wow fadeInUp" dir="ltr">
-        
           @foreach($ambassador as $ambassadors)
+          
         <div class="card card-hover card-transparent shadow-none">
 
-            
-            <div class="card">
-                <a href="course-single-left-sidebar.html" class="position-relative">
-                  <img class="card-img-top lazyestload" data-src="assets/img/courses/courses-img2.jpg" src="assets/img/courses/courses-img2.jpg" alt="Card image">
-                  <div class="card-img-overlay">
-                    
-                  </div>
-                </a>
-                <div class="card-body border-top-5 px-3 border-success">
-                  <h3 class="card-title">
-                    <a class="text-success text-capitalize d-block text-truncate" href="course-single-left-sidebar.html">{{ $ambassadors->FirstName}}</a>
-                  </h3>
-                  <ul class="list-unstyled text-muted">
-                    <li class="mb-1">
-                      <i class="fa fa-calendar-o mr-2" aria-hidden="true"></i>Age 2 to 4 Years
-                    </li>
-                    <li>
-                      <i class="fa fa-clock-o mr-2" aria-hidden="true"></i>9.00AM-11.00AM
-                    </li>
-                  </ul>
-                  <p> It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. </p>
-                  <div class="">
-                      <a class="icon-rounded-circle-small bg-warning mr-2" href="javascript:void(0)">
-                        <i class="fa fa-facebook text-white" aria-hidden="true"></i>
-                      </a>
-                      <a class="icon-rounded-circle-small bg-success mr-2" href="javascript:void(0)">
-                        <i class="fa fa-twitter text-white" aria-hidden="true"></i>
-                      </a>
-                      <a class="icon-rounded-circle-small bg-danger mr-2" href="javascript:void(0)">
-                        <i class="fa fa-google-plus text-white" aria-hidden="true"></i>
-                      </a>
-                      <a class="icon-rounded-circle-small bg-info mr-2" href="javascript:void(0)">
-                        <i class="fa fa-pinterest-p text-white" aria-hidden="true"></i>
-                      </a>
-                      <a class="icon-rounded-circle-small bg-purple" href="javascript:void(0)">
-                        <i class="fa fa-vimeo text-white" aria-hidden="true"></i>
-                      </a>
+            <div class="col-md-20 col-sm-15">
+                <div class="box14 text-center">
+                    <img src="{{ $ambassadors->img}}" alt="">
+                    <div class="box-content">
+                        <h3 class="title">{{ $ambassadors->FirstName}} {{ $ambassadors->LastName}} </h3>
+                        <span class="post">{{ $ambassadors->School}}</span>
+                        <ul class="icon">
+                            <li class="icon-rounded-circle-small mr-2"><a href="#"><i class="fa fa-search"></i></a></li>
+                            <li class="icon-rounded-circle-small mr-2"><a href="#"><i class="fa fa-link"></i></a></li><br><br><br>
+
+                            <a class="icon-rounded-circle-small bg-warning mr-2" href="{{ $ambassadors->Facebook}}">
+                                <i class="fa fa-facebook text-white" aria-hidden="true"></i>
+                              </a>
+                              <a class="icon-rounded-circle-small bg-success mr-2" href="{{ $ambassadors->twitter}}">
+                                <i class="fa fa-twitter text-white" aria-hidden="true"></i>
+                              </a>
+                              <a class="icon-rounded-circle-small bg-danger mr-2" href="{{ $ambassadors->Email}}">
+                                <i class="fa fa-google-plus text-white" aria-hidden="true"></i>
+                              </a>
+                              <a class="icon-rounded-circle-small bg-info mr-2" href="{{ $ambassadors->Linkin}}">
+                                <i class="fa fa-linkedin text-white" aria-hidden="true"></i>
+                              </a>
+                        </ul>
                     </div>
-                  <div class="d-block">
-                    
-                    <a href="course-single-left-sidebar.html" class="btn btn-link text-hover-success pl-2 pl-lg-0">
-                      <i class="fa fa-angle-double-right mr-1" aria-hidden="true"></i> More
-                    </a>
-                  </div>
                 </div>
-              </div>
+            </div>
+
+            
         
         </div>
         @endforeach
         
       </div>
+      <div class="text-center">
+          <a href="/AmbassadorRegister" class="btn btn-danger shadow-sm text-uppercase mt-4">
+              <i class="fa fa-users mr-2" aria-hidden="true"></i>Become a SIS Ambassador
+            </a>
+          </div>
     </div>
   </section>
   <!-- ====================================
   ———	COUNTER-UP SECTION
   ===================================== -->
-  <section class="py-9 pb-8 bg-parallax" style="background-image: url(assets/img/background/countup-bg-img.jpg);">
+  <section class="py-0 pb-0 bg-parallax" style="background-image: url(assets/img/background/countup-bg-img.jpg);">
+  
+    <div style="background-color:rgba(255, 57, 51,0.6); ">
+      <div class="py-6"></div>
     <div class="container">
       <div class="sectionTitleSmall text-center mb-7 wow fadeInUp">
         <h2 class="font-weight-bold text-white">Some Fun Facts</h2>
@@ -734,92 +741,138 @@
       <div class="row wow fadeInUp" id="counter">
         <div class="col-sm-3 col-xs-12">
           <div  class="text-center text-white mb-5">
-                      <div class="counter-value" data-count="179">0</div>
+                      <div class="counter-value" data-count="{{$eventtable->count()}}">0</div>
             <span class="d-inline-block bg-warning text-uppercase font-weight-medium rounded-sm shadow-sm mt-1 py-2 px-3">Events Held</span>
           </div>
         </div>
   
         <div class="col-sm-3 col-xs-12">
           <div class="text-center text-white mb-5">
-                      <div class="counter-value" data-count="548">0</div>
-            <span class="d-inline-block bg-success text-uppercase font-weight-medium rounded-sm shadow-sm mt-1 py-2 px-3">happy funs</span>
+                      <div class="counter-value" data-count="{{$SISAccount->count()}}">0</div>
+            <span class="d-inline-block bg-success text-uppercase font-weight-medium rounded-sm shadow-sm mt-1 py-2 px-3">SISAccount </span>
           </div>
         </div>
   
         <div class="col-sm-3 col-xs-12">
           <div class="text-center text-white mb-5">
-            <div class="counter-value" data-count="305">0</div>
-            <span class="d-inline-block bg-danger text-uppercase font-weight-medium rounded-sm shadow-sm mt-1 py-2 px-3">happy Clients</span>
+            <div class="counter-value" data-count="{{$ambassadors->count()}}">0</div>
+            <span class="d-inline-block bg-danger text-uppercase font-weight-medium rounded-sm shadow-sm mt-1 py-2 px-3">Ambassadors</span>
           </div>
         </div>
   
         <div class="col-sm-3 col-xs-12">
           <div class="text-center text-white mb-5">
-                      <div class="counter-value" data-count="1000">0</div>
-            <span class="d-inline-block bg-info text-uppercase font-weight-medium rounded-sm shadow-sm mt-1 py-2 px-3">hours support</span>
+                      <div class="counter-value" data-count="{{$mentors->count()}}">0</div>
+            <span class="d-inline-block bg-info text-uppercase font-weight-medium rounded-sm shadow-sm mt-1 py-2 px-3">mentors</span>
           </div>
         </div>
       </div>
     </div>
+  </div>
   </section>
   
   <!-- ====================================
   ———	BLOG SECTION
   ===================================== -->
-  <section class="pt-9 pb-7" id="blog">
-      <div class="container">
-        <div class="section-title justify-content-center mb-4 mb-md-8 wow fadeInUp">
-          <span class="shape shape-left bg-info"></span>
-          <h2 class="text-danger">Latest News</h2>
-          <span class="shape shape-right bg-info"></span>
-        </div>
-    
-        <div class="row wow fadeInUp">
-              
-    
-          
-    
-          <div class="col-md-4">
-            <div class="card">
-                        <div class="position-relative">
-                            <a href="blog-single-left-sidebar.html">
-                    <img class="card-img-top lazyestload" data-src="assets/img/blog/blog-img3.jpg" src="assets/img/blog/blog-img3.jpg" alt="Card image">
-                            </a>
-                  <div class="card-img-overlay p-0">
-                    <span class="badge badge-danger badge-rounded m-4"> 14 <br> Jun</span>
-                  </div>
-                        </div>
-    
-              <div class="card-body border-top-5 px-3 border-danger">
-                <h3 class="card-title">
-                  <a class="text-danger text-capitalize d-block text-truncate" href="blog-single-left-sidebar.html">Vestibulum congue massa vitae.</a>
-                </h3>
-                            <ul class="list-unstyled d-flex flex-md-column flex-lg-row">
-                  <li class="mr-2">
-                                    <a class="text-muted" href="blog-single-left-sidebar.html">
-                                        <i class="fa fa-user mr-2" aria-hidden="true"></i>Jone Doe
-                                    </a>
-                  </li>
-                  <li class="mr-2">
-                                    <a class="text-muted" href="blog-single-left-sidebar.html">
-                                        <i class="fa fa-comments-o mr-2" aria-hidden="true"></i>4 Comments
-                                    </a>
-                  </li>
-                </ul>
-                <p class="mb-2"> Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classi cal Latin literature.</p>
-                <a class="btn btn-link text-hover-danger pl-0" href="blog-single-left-sidebar.html">
-                  <i class="fa fa-angle-double-right mr-1" aria-hidden="true"></i> Read More
-                </a>
-              </div>
-            </div>
+  <section class="pt-9 pb-7 py-md-10" id="gallery">
+    <div class="container">
+      <div class="section-title justify-content-center mb-2 mb-md-8 wow fadeInUp">
+        <span class="shape shape-left bg-danger"></span>
+        <h2 class="text-white">Meet Our Teachers</h2>
+        <span class="shape shape-right bg-danger"></span>
+      </div>
+  
+      <div class="team-slider owl-carousel owl-theme wow fadeInUp" dir="ltr">
+        @foreach($eventtable as $eventables)
+        <div class="card">
+          <div class="position-relative">
+              <a href="blog-single-left-sidebar.html">
+                <div class="fb-page" 
+                data-tabs="events"
+                data-href="https://www.facebook.com/{{ $eventables->Link}}"
+                data-width="270" 
+                         data-hide-cover="true"
+                         data-show-facepile="false"
+                         data-small-header="true""></div>
+              </a>
+         <div class="card-img-overlay p-0 ">
+             <span class="badge badge-danger badge-rounded m-4 pull-right"> 14 <br> Jun</span>
           </div>
         </div>
-    
-        <div class="btn-aria text-center mt-4 wow fadeInUp">
-                <a href="blog-grid.html" class="btn btn-danger text-uppercase">View More</a>
+
+        <div class="card-body border-top-5 px-6 border-danger">
+          <h3 class="card-title">
+           
+           <a class="text-danger text-capitalize d-block text-truncate" href="blog-single-left-sidebar.html">{{ $eventables->title }}</a>
+                          
+          </h3>
+          <ul class="list-unstyled d-flex flex-md-column flex-lg-row">
+           <li class="mr-2">
+                <a class="text-muted" href="blog-single-left-sidebar.html">
+               <i class="fa fa-user mr-2" aria-hidden="true"></i>Jone Doe
+              </a>
+              </li>
+           <li class="mr-2">
+             <a class="text-muted" href="blog-single-left-sidebar.html">
+                <i class="fa fa-comments-o mr-2" aria-hidden="true"></i>4 Comments
+              </a>
+             </li>
+              </ul>
+             <a class="btn btn-link text-hover-danger pl-0" href="blog-single-left-sidebar.html">
+           <i class="fa fa-angle-double-right mr-1" aria-hidden="true"></i> Read More
+           </a>
             </div>
+          </div>
+          
+              @endforeach
+  
+        
       </div>
-    </section>
+    </div>
+  </section>
+  
+  
+    <!-- ====================================
+  ———	COUNTER-UP SECTION
+  ===================================== -->
+  <section class="py-0 pb-0 bg-parallax" style="background-image: url(assets/img/background/event.png);">
+
+  
+    <div style="background-color:rgba(0, 0, 0 ,0.6); ">
+      <div class="py-7"></div>
+    <div class="container">
+      <div class="sectionTitleSmall text-center mb-7 wow fadeInUp">
+        <h2 class="font-weight-bold text-white">Event Calander</h2>
+      </div>
+  
+     
+        <div class="col-sm-6 col-xs-12 bg-light ">
+          @if (\Session::has('success'))
+          <div class="alert alert-success">
+            <p>{{ \Session::get('success') }}</p>
+          </div><br />
+         @endif
+       <div class="panel panel-default">
+             <div class="panel-heading">
+                 <h2>Event Calendar</h2>
+             </div>
+             <div class="panel-body" >
+                {!! $calendar->calendar() !!}
+            </div>
+        </div>
+        </div>
+  
+  
+        {!! $calendar->script() !!}
+
+
+      </div>
+      <div class="py-7"></div>
+    </div>
+   
+ 
+    
+  </section>
  <!-- ====================================
   ———	BLOG SECTION
   ===================================== -->

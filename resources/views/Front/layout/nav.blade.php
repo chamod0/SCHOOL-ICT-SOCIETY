@@ -99,9 +99,9 @@
     
             <div class="collapse navbar-collapse" id="navbarContent">
               <ul class="navbar-nav ml-lg-auto">
+                
                 <li class="nav-item dropdown bg-warning">
-                  <a class="nav-link dropdown-toggle " href="/"
-                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <a class="nav-link dropdown-toggle " href="{{  url('/') }}">
                     <i class="fa fa-home nav-icon" aria-hidden="true"></i>
                     <span>Home</span>
                   </a>
@@ -125,7 +125,7 @@
                     </li>
                     
                     <li>
-                      <a class="dropdown-item  scrolling" href="/#courses">List of Societies</a>
+                      <a class="dropdown-item " href="/#courses">List of Societies</a>
                     </li>
                     <li>
                       <a class="dropdown-item " href="/SISRegister">Register a Society</a>

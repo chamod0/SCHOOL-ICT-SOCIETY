@@ -14,6 +14,23 @@ Route::get('/pendig/{id}','SISAccountController@Pending')->name('SIS.Pending');
 Route::get('/shpw/{id}','SISAccountController@show')->name('SIS.show');
 Route::get('/live_search/action', 'SISAccountController@action')->name('live_search.action');
 
+
+
+
+Route::get('/Menteors', 'Front\MentorController@admin');
+Route::get('/confirmMenteors/{id}','Front\MentorController@confirm')->name('Menteors.confirm');
+Route::get('/pendigMenteors/{id}','Front\MentorController@Pending')->name('Menteors.Pending');
+Route::get('/shpwMenteors/{id}','Front\MentorController@show')->name('Menteors.show');
+Route::get('/live_searchMenteors/action', 'Front\MentorController@action')->name('live_searchMenteors.action');
+
+Route::get('/Ambassador', 'Front\AmbassadorController@admin');
+Route::get('/confirmAmbassador/{id}','Front\AmbassadorController@confirm')->name('Ambassador.confirm');
+Route::get('/pendigAmbassador/{id}','Front\AmbassadorController@Pending')->name('Ambassador.Pending');
+Route::get('/shpwAmbassador/{id}','Front\AmbassadorController@show')->name('Ambassador.show');
+Route::get('/live_searchAmbassador/action', 'Front\AmbassadorController@action')->name('live_searchAmbassador.action');
+
+
+
 Route::get('/logout','AdminUserController@logout');
 
 });
@@ -49,3 +66,7 @@ Route::get('/viwelist/{id}','Front\SISProfileController@check');
 
 Route::get('/AmbassadorRegister', 'Front\AmbassadorController@index');
 Route::post('/AmbassadorRegister', 'Front\AmbassadorController@AmbassadorRegister');
+
+Route::get('event/add','EventController@createEvent');
+Route::post('event/add','EventController@store');
+Route::get('event','EventController@calender');
