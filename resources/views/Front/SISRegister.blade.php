@@ -42,7 +42,7 @@
                         @csrf
                       <div class="form-group form-group-icon">
                           
-                        <input type="text" class="form-control border border-info"  placeholder="School Name" name="SchoolName" >
+                        <input type="text" class="form-control border-info"  placeholder="School Name" name="SchoolName" >
                         <span class="text-danger">{{ $errors->first('SchoolName') }}</span>
                       </div>
       
@@ -50,7 +50,7 @@
                         
                        <div class="form-group form-group-icon">
                        
-                        <select name="District" class="form-control border border-info" id="day">
+                        <select name="District" class="form-control border-info" id="day">
                             <option value="" disabled selected>Select District</option>
                                    <option value="Colombo">Colombo</option>
                                    <option value="Gampaha">Gampaha</option>
@@ -81,16 +81,19 @@
                         <span class="text-danger">{{ $errors->first('District') }}</span>
                       </div>
                       <div class="form-group form-group-icon">
-                            <input type="text" class="form-control border border-info" placeholder="Education Zone" name="EducationZone" >
+                            <input type="text" class="form-control border-info" placeholder="Education Zone" name="EducationZone" >
                             <span class="text-danger">{{ $errors->first('EducationZone') }}</span>
                           </div>
-      
-                      <div class="form-group form-group-icon">
+                          <div class="row">
+                          <div class="form-group form-group-icon col-lg-6">
                         <input type="text" class="form-control border-info"  placeholder="Address line 1" name="AddressL1" ><br>
                         <span class="text-danger">{{ $errors->first('AddressL1') }}</span>
+                      </div>
+                        <div class="form-group form-group-icon col-lg-6">
                         <input type="text" class="form-control border-info" placeholder="Address line 2" name="AddressL2">
                         <span class="text-danger">{{ $errors->first('AddressL2') }}</span>
                       </div>
+                    </div>
                         
                       <div class="form-group form-group-icon">
                         <input type="text" class="form-control border-info" placeholder="Contact Number"name = "TelNo" >
@@ -106,26 +109,27 @@
                             <span class="text-danger">{{ $errors->first('SchoolFBProfile') }}</span>
                           </div>
       
-                      <div class="form-group form-group-icon">
+                          <div class="row">
+                            <div class="form-group form-group-icon col-lg-6">
                         <input type="text" class="form-control border-info" placeholder="President of Society" name="PresidentOfSociety">
                         <span class="text-danger">{{ $errors->first('PresidentOfSociety') }}</span>
                       </div>
                         
-                      <div class="form-group form-group-icon">
+                      <div class="form-group form-group-icon col-lg-6">
                         <input type="text" class="form-control border-info" placeholder="Secretry Of Society" name="SecretryOfSociety" >
                         <span class="text-danger">{{ $errors->first('SecretryOfSociety') }}</span>
                       </div>
                         
-                      <div class="form-group form-group-icon">
+                      <div class="form-group form-group-icon col-lg-6">
                         <input type="text" class="form-control border-info" placeholder="Treasurer Of Society" name="TreasurerOfSociety" >
                         <span class="text-danger">{{ $errors->first('TreasurerOfSociety') }}</span>
                       </div>
                       
-                      <div class="form-group form-group-icon">
+                      <div class="form-group form-group-icon col-lg-6">
                         <input type="text" class="form-control  border-info" placeholder="Teacher In Charge" name="TeacherInCharge">
                         <span class="text-danger">{{ $errors->first('TeacherInCharge') }}</span>
                       </div>
-                      
+                    </div>
                       <div class="form-group form-group-icon">
                         <input type="password" class="form-control border-info" placeholder="Password" name="password">
                         <span class="text-danger">{{ $errors->first('password') }}</span>

@@ -8,6 +8,7 @@ use App\Mail\WelcomeMail;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 
+use function GuzzleHttp\Promise\all;
 
 class MentorController extends Controller
 {
@@ -17,7 +18,18 @@ class MentorController extends Controller
 
         return view('Front.mentor');
     }
+    
+    
+    public function profile($id){
 
+        $mentor = Mentor::where('id', $id)->first();
+
+     
+        
+
+        return view('Front.MentorProfile',compact('mentor'));
+
+    }
    
     
 
@@ -35,14 +47,23 @@ class MentorController extends Controller
             'AddressL1'=>'required',
              'AddressL2'=>'required',
              'Gender'=>'required',
+             'Tel'=>'required',
              'Linkin'=>'required',
              'Facebook'=>'required',
              'twitter'=>'required',
-             'img'=>'required'
+             'img'=>'required',
+             'About'=>'required'
               
  
         ]);
- 
+
+           // Upload the image
+           if ($request->hasFile('img')) {
+            $img = $request->img;
+            $img->move('assets/img/mentor/', $img->getClientOriginalName());
+        }
+
+           
  
          Mentor::create([
          'question1'=>$request->question1,
@@ -55,10 +76,12 @@ class MentorController extends Controller
            'AddressL1'=>$request->AddressL1,
             'AddressL2'=>$request->AddressL2,
             'Gender'=>$request->Gender,
+            'Tel'=>$request->Tel,
             'Linkin'=>$request->Linkin,
             'Facebook'=>$request->Facebook,
             'twitter'=>$request->twitter,
-            'img'=>$request->img,
+            'About'=>$request->About,
+            'img'=>$request->img->getClientOriginalName()
             
  
         ]);

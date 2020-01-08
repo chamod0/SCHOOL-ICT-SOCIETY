@@ -57,6 +57,7 @@ Route::get('/SISProfile', 'Front\SISProfileController@index');
 Route::get('/mentor', 'Front\MentorController@index');
 Route::post('/mentor', 'Front\MentorController@MentorRegister');
 
+Route::get('/mentorProfile/{id}', 'Front\MentorController@profile');
 
 
 Route::get('/viwelistall', 'Front\SISProfileController@list');
@@ -66,6 +67,7 @@ Route::get('/viwelist/{id}','Front\SISProfileController@check');
 
 Route::get('/AmbassadorRegister', 'Front\AmbassadorController@index');
 Route::post('/AmbassadorRegister', 'Front\AmbassadorController@AmbassadorRegister');
+Route::get('/AmbassadorProfile/{id}', 'Front\AmbassadorController@profile');
 
 Route::get('event/add','EventController@createEvent');
 Route::post('event/add','EventController@store');

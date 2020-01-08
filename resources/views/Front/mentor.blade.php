@@ -19,7 +19,7 @@
                       
                   <div class="p-3">
                      
-                    <form action="/mentor" method="POST" role="form">
+                    <form action="/mentor" method="POST" role="form" enctype="multipart/form-data">
 
                         @csrf
                         
@@ -42,8 +42,8 @@
                       <span class="text-danger">{{ $errors->first('question3') }}</span>
                       </div>
                       <div class="form-group form-group-icon">
-                          <input type="text" class="form-control border border-info" placeholder="Name" name="Name" required="">
-                            <span class="text-danger">{{ $errors->first('Email') }}</span>
+                          <input type="text" class="form-control border border-info" placeholder="Name" name="Name" >
+                            <span class="text-danger">{{ $errors->first('Name') }}</span>
                           </div>
                       
                       <div class="form-group form-group-icon">                       
@@ -54,7 +54,7 @@
                       </div>
 
                       <div class="form-group form-group-icon">
-                          <input type="text" class="form-control border border-info" placeholder="Email" name="Email" required="">
+                          <input type="text" class="form-control border border-info" placeholder="Email" name="Email" >
                             <span class="text-danger">{{ $errors->first('Email') }}</span>
                           </div>
       
@@ -66,7 +66,7 @@
                       </div>
                         
                       <div class="form-group form-group-icon">
-                        <input type="text" class="form-control border border-info" placeholder="Date of Birth"name = "Dob" >
+                        <input type= "date" class="form-control border border-info rounded-sm" placeholder="Date of Birth" name = "Dob" >
                         <span class="text-danger">{{ $errors->first('Dob') }}</span>
                       </div>
       
@@ -74,25 +74,43 @@
                         <input type="text" class="form-control border border-info" placeholder="Job" name="Job">
                         <span class="text-danger">{{ $errors->first('Job') }}</span>
                       </div>
-                      
-                      <div class="form-group form-group-icon">
-                            <input type="text" class="form-control border border-info" placeholder="Linkin" name="Linkin" >
-                            <span class="text-danger">{{ $errors->first('Linkin') }}</span>
-                          </div>
-      
-                      <div class="form-group form-group-icon">
-                        <input type="text" class="form-control border border-info" placeholder="Facebook" name="Facebook">
-                        <span class="text-danger">{{ $errors->first('Facebook') }}</span>
+                      <div class="row">
+                        <div class="form-group form-group-icon col-lg-6">
+                             
+                                <input type="text" class="form-control  border border-info rounded-sm"  placeholder="Tel No" id="country" name="Tel">
+                               <span class="text-danger">{{ $errors->first('Tel') }}</span>
+                              </div>
+                        <div class="form-group form-group-icon col-lg-6">
+                             
+                                <input type="text" class="form-control border border-info rounded-sm" id="country" placeholder="Linkin" name="Linkin">
+                                  <span class="text-danger">{{ $errors->first('Linkin') }}</span>
+                              </div>
+                        <div class="form-group form-group-icon col-lg-6">
+                             
+                                <input type="text" class="form-control border border-info rounded-sm" id="country" placeholder="Facebook" name="Facebook">
+                                <span class="text-danger">{{ $errors->first('Facebook') }}</span>
+                              </div>
+                              <div class="form-group form-group-icon col-lg-6">
+                                    
+                                    <input type="text" class="form-control border border-info rounded-sm" id="country"placeholder="twitter"  name="twitter">
+                                    <span class="text-danger">{{ $errors->first('twitter') }}</span>
+                                  </div>
+                        
                       </div>
-
                       <div class="form-group form-group-icon">
-                          <input type="text" class="form-control border border-info" placeholder="twitter" name="twitter">
-                          <span class="text-danger">{{ $errors->first('twitter') }}</span>
-                        </div>
+                        <label class="pull-left" for="q2">About You</label> <br>
+                 <textarea class="form-control border border-info" name="About" id="" cols="80" rows="5" placeholder=""></textarea>
+
+                 <span class="text-danger">{{ $errors->first('About') }}</span>
+                   </div>
+
                         <div class="form-group form-group-icon">
-                            <input type="text" class="form-control border border-info" placeholder="Image" name="img">
-                            <span class="text-danger">{{ $errors->first('img') }}</span>
+                            <label for="country">Image</label>
+                          <input type="file" id="file-input" multiple  class="form-control border border-info rounded-sm" id="country" name="img">
+                          <span class="text-danger">{{ $errors->first('img') }}</span>
+                          <div id="thumb-output"></div>
                           </div>
+
 
                       <div class="form-group">
                         <button type="submit" class="btn btn-danger text-uppercase w-100">Register</button>

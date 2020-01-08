@@ -17,6 +17,16 @@ class AmbassadorController extends Controller
         return view('Front.AmbassadorRegister');
       
     }
+    public function profile($id){
+
+        $ambassador = Ambassador::where('id', $id)->first();
+
+     
+        
+
+        return view('Front.AmbassadorProfile',compact('ambassador'));
+
+    }
     public function AmbassadorRegister(Request $request){
             
         $request->validate([
@@ -41,7 +51,11 @@ class AmbassadorController extends Controller
               
  
         ]);
- 
+   // Upload the image
+   if ($request->hasFile('img')) {
+    $img = $request->img;
+    $img->move('assets/img/Ambassador/', $img->getClientOriginalName());
+}
  
         Ambassador::create([
          'FirstName'=>$request->FirstName,
@@ -59,8 +73,8 @@ class AmbassadorController extends Controller
             'Linkin'=>$request->Linkin,
             'Facebook'=>$request->Facebook,
             'twitter'=>$request->twitter,
-            'img'=>$request->img,
-            
+         
+            'img'=>$request->img->getClientOriginalName()
  
         ]);
       

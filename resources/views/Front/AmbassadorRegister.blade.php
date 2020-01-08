@@ -27,7 +27,7 @@
           @endif
       
             <div class="card-body border border-top-0 rounded-bottom-sm p-7">
-                    <form action="/AmbassadorRegister" method="POST" role="form">
+                    <form action="/AmbassadorRegister" method="POST" role="form" enctype="multipart/form-data">
                         @csrf
               <div class="row">
                     
@@ -111,7 +111,7 @@
                 </div>
                 <div class="form-group form-group-icon col-lg-6">
                         <label for="country">Date of birth</label>
-                        <input type="text" class="form-control border-info rounded-sm" id="country" name="Dob">
+                        <input type="date" class="form-control border-info rounded-sm" id="country" name="Dob">
                       </div>
                 
               </div>
@@ -142,7 +142,9 @@
                   <div class="row">
                         <div class="form-group form-group-icon col-lg-12">
                           <label for="country">Image</label>
-                      <input type="text" class="form-control border-info rounded-sm" id="country" name="img">
+                      <input type="file" id="file-input" multiple  class="form-control border-info rounded-sm" id="country" name="img">
+                     
+                      <div id="thumb-output"></div>
                    </div>
                          </div>
 

@@ -41,7 +41,7 @@ class HomeController extends Controller
         }
         $calendar = Calendar::addEvents($events);
 
-        $SISAccount = new SISAccount();
+        $SISAccount = SISAccount::all()->where('IsActive', '==', "1");
 
         return view('Front.index',compact('mentor','ambassador','calendar','eventtable','SISAccount'));
         

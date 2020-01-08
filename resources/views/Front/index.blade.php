@@ -47,7 +47,7 @@
             data-basealign="grid"
             data-responsive_offset="off"
             style="z-index: 1;">
-              <span class="text-white">Kindergarten</span> Website
+              <span class="text-white">SCHOOL ICT SOCIETY</span> 
           </div>
           
           <!-- LAYER NR. 2 -->
@@ -71,12 +71,12 @@
             data-type="text"
             data-whitespace="normal"
             style="z-index: 10;">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quasi cupiditate, consectetur praesentium id 
-              accusantium labore quoconsequatur quos.
+            
+            Local groups of school students with a passion for technology working together to shape the school ICT landscape in Sri Lanka and worldwide.
           </div>
           
           <!-- LAYER NR. 3 -->
-          <a href="https://wrapbootstrap.com/theme/kidz-multipurpose-children-kids-theme-WB059350N"
+          <a href="/SISRegister"
             class="tp-caption tp-resizeme slide-layer-3 btn btn-white"
             data-frames='[{
               "delay":2200,"speed":1300,"frame":"500","from":"y:-50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},
@@ -173,7 +173,7 @@
             data-basealign="grid"
             data-responsive_offset="off"
             style="text-transform: uppercase; z-index: 1;">
-              purchase
+              Join
           </a>
   
               </li>
@@ -253,87 +253,13 @@
             data-responsive_offset="on"
             data-type="text"
             style="text-transform: uppercase; z-index: 1;">
-              purchase
+              Join
           </a>
           
               </li>
   
-              <!-- SLIDE 4  -->
-              <li data-transition="fade">
-                  <img src="assets/img/banner/slider-1/img-4.jpg" alt="Sky" class="rev-slidebg">
-          <!-- LAYERS -->
-  
-          <!-- LAYER NR. 1 -->
-          <div class="tp-caption tp-resizeme font-dosis font-weight-bold"
-            data-frames='[{
-            "delay":1600,"speed":1000,"frame":"500","from":"y:-50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},
-            {"delay":"wait","speed":200,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
-  
-            data-visibility="on"
-            data-x="center"
-            data-y="middle"
-            data-hoffset="['0', '0', '0', '0']"
-            data-voffset="['-75', '-75', '-65', '-45']"
-            data-fontsize="['50', '45', '40', '30']"
-            data-lineheight="['50', '45', '40', '30']"
-            data-color="#FFF"
-            data-width="auto"
-            data-basealign="grid"
-            data-responsive_offset="off"
-            style="z-index: 1;">
-              Bright <span class="text-white">Playful Colors</span>
-          </div>
-       
-          <!-- LAYER NR. 2 -->
-          <div class="tp-caption tp-resizeme"
-            data-frames='[{
-            "delay":2000,"speed":1300,"frame":"500","from":"y:-50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},
-              {"delay":"wait","speed":200,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
-  
-            data-visibility="on"
-            data-x="center"
-            data-y="middle"
-            data-hoffset="['0', '0', '0', '0']"
-            data-voffset="['0', '0', '0', '0']"
-            data-width="['550','400','400','420']"
-            data-fontsize="['25', '23', '23', '23']"
-            data-lineheight="['30', '25', '25', '25']"
-            data-color="#FFF"
-            data-textAlign="center"
-            data-basealign="grid"
-            data-responsive_offset="on"
-            data-responsive="on"
-            data-type="text"
-            data-whitespace="normal"
-            style="z-index: 10;">
-              Combination of bright playful colors help you make users happy.
-          </div>
-          
-          <!-- LAYER NR. 3 -->
-          <a href="https://wrapbootstrap.com/theme/kidz-multipurpose-children-kids-theme-WB059350N"
-            class="tp-caption tp-resizeme slide-layer-3 btn btn-white"
-            data-frames='[{
-            "delay":2200,"speed":1300,"frame":"500","from":"y:-50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},
-            {"delay":"wait","speed":200,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
-  
-            data-visibility="on"
-            data-x="center"
-            data-y="middle"
-            data-hoffset="['0', '0', '0', '0']"
-            data-voffset="['90', '80', '70', '55']"
-            data-width="['auto']"
-            data-height="['auto']"
-            data-fontsize="['18', '17', '16', '15']"
-            data-lineheight="['25', '23', '21', '20']"
-            data-color="#e7655a"
-            data-textAlign="left"
-            data-basealign="grid"
-            data-responsive_offset="off"
-            style="text-transform: uppercase; z-index: 1;">
-              purchase
-          </a>
-          
-              </li>
+              
+              
           </ul>
     </div>
   </section>
@@ -414,12 +340,12 @@
   <!-- ====================================
 ———	WHAT IS SIS
 ===================================== -->	  
-<section class="py-7 py-md-10">
+<section class="py-0 py-md-3">
     <div class="container">
       <div class="row">
         <div class="col-sm-6 col-xs-12 order-md-1">
-          <div class="image mb-4 mb-md-0 wow fadeInUp">
-            <img class="img-fluid rounded" src="assets/img/ICTA2123.png" width="500">
+          <div class="image mb-0 mb-md-0 wow fadeInUp">
+            <img class="img-fluid rounded" src="assets/img/ICTA2123.png" width="700">
           </div>
         </div>
   
@@ -442,7 +368,7 @@
   <!-- ====================================
   ———	HOME FEATURE
   ===================================== -->
-  <section class="pt-9 pb-6 py-md-7">
+  <section class="pt-9 pb-3 py-md-4">
     <div class="container">
       <div class="section-title justify-content-center mb-4 mb-md-8 wow fadeInUp">
         <span class="shape shape-left bg-info"></span>
@@ -455,7 +381,7 @@
         <div class="col-sm-6 col-xl-4 col-xs-12">
           <div class="media mb-6">
                       <div class="media-icon-large bg-warning mr-xl-4">
-                          <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+                          <i class="fa fa-bullhorn" aria-hidden="true"></i>
                       </div>
   
             <div class="media-body">
@@ -469,7 +395,7 @@
         <div class="col-sm-6 col-xl-4 col-xs-12">
           <div class="media mb-6">
                       <div class="media-icon-large bg-success mr-xl-4">
-                          <i class="fa fa-leaf" aria-hidden="true"></i>
+                          <i class="fa fa-laptop" aria-hidden="true"></i>
                       </div>
   
             <div class="media-body">
@@ -483,7 +409,7 @@
         <div class="col-sm-6 col-xl-4 col-xs-12">
           <div class="media mb-6">
                       <div class="media-icon-large bg-danger mr-xl-4">
-                          <i class="fa fa-car" aria-hidden="true"></i>
+                          <i class="fa fa-lightbulb-o" aria-hidden="true"></i>
                       </div>
             <div class="media-body">
               <h3 class="text-danger">RESEARCH & INNOVATION</h3>
@@ -496,7 +422,7 @@
         <div class="col-sm-6 col-lg-4 col-xs-12">
           <div class="media mb-6">
                       <div class="media-icon-large bg-info mr-xl-4">
-                          <i class="fa fa-cutlery" aria-hidden="true"></i>
+                          <i class="fa fa-fire  free-camp" aria-hidden="true"></i>
                       </div>
             <div class="media-body">
               <h3 class="text-info">ENTREPRENEURSHIP</h3>
@@ -544,7 +470,7 @@
       <div class="container">
       <div class="wow fadeInUp">
         <div class="section-title justify-content-center">
-            <a href="contact-us.html" class="btn btn-danger shadow-sm text-uppercase mt-4">
+            <a href="/SISRegister" class="btn btn-danger shadow-sm text-uppercase mt-4">
                <h2 class="text-white text-center">HOW CAN I BE A MEMBER?</h2>
               </a><br><br><br><br><br><br>
           
@@ -552,7 +478,7 @@
         <div class="text-center">
             <p class="text-white font-size-18 mb-0">To get involved, simply apply to register your existing school club or start a new school ICT Society at your school!
                 Check to see if your school has a ICT Society</p>
-            <a href="contact-us.html" class="btn btn-danger shadow-sm text-uppercase mt-4">
+            <a href="/SISRegister" class="btn btn-danger shadow-sm text-uppercase mt-4">
               <i class="fa fa-phone mr-2" aria-hidden="true"></i>APPLY TO REGISTER A CLUB
             </a>
           </div>
@@ -583,7 +509,9 @@
      </div>
                 <div class="col-sm-9 col-md-6 col-lg-7 " ">
                         <div class="pull-right wow fadeInRight"> 
+                          <div >
                         @include('Front.layout.map')
+                      </div>
                     </div>
                     </div>
                 
@@ -606,7 +534,7 @@
     <div class="container">
       <div class="section-title justify-content-center mb-2 mb-md-8 wow fadeInUp">
         <span class="shape shape-left bg-danger"></span>
-        <h2 class="text-white">Registed SIS Mentor   </h2>
+        <h2 class="text-white"> Mentors   </h2>
         <span class="shape shape-right bg-danger"></span>
       </div>
 
@@ -616,7 +544,7 @@
           @foreach($mentor as $mentors)
         <div class="card card-hover card-transparent shadow-none wow">
           <div class="card-img-wrapper position-relative shadow-sm rounded-circle mx-auto">
-            <img class="card-img-top rounded-circle lazyestload" data-src="{{ $mentors->img}}" src="{{ $mentors->img}}" alt="carousel-img"/>
+            <img class="card-img-top rounded-circle lazyestload" data-src="assets/img/mentor/{{ $mentors->img}}" src="assets/img/mentor/{{ $mentors->img}}" alt="carousel-img"/>
             <div class="card-img-overlay text-center rounded-circle">
               <ul class="list-unstyled mb-0 d-flex align-items-center h-100 justify-content-center">
                 <li class="mr-2">
@@ -644,7 +572,7 @@
             </div>
           </div>
           <div class="card-body text-center">
-            <a class="font-size-20 font-weight-medium d-block" href="teachers-details.html">{{ $mentors->Name}}</a>
+            <a class="font-size-20 font-weight-medium d-block" href="{{ URL('/mentorProfile/'.$mentors->id)}}">{{ $mentors->Name}}</a>
             <span class="text-white">{{ $mentors->Job}}</span>
           </div>
         </div>
@@ -652,7 +580,6 @@
   
         @endforeach
        
-        
         
        
        
@@ -687,13 +614,19 @@
 
             <div class="col-md-20 col-sm-15">
                 <div class="box14 text-center">
-                    <img src="{{ $ambassadors->img}}" alt="">
-                    <div class="box-content">
-                        <h3 class="title">{{ $ambassadors->FirstName}} {{ $ambassadors->LastName}} </h3>
-                        <span class="post">{{ $ambassadors->School}}</span>
+                    <img class="img-fluid rounded-circle" src="assets/img/Ambassador/{{ $ambassadors->img}}" alt="">
+                    
+                    <div class="box-content ">
+                      
+                      <h3 class="title">{{ $ambassadors->FirstName}} {{ $ambassadors->LastName}} </h3>
+
+                   
+                     
+
+                      <span class="post">{{ $ambassadors->School}}</span>
+                     
                         <ul class="icon">
-                            <li class="icon-rounded-circle-small mr-2"><a href="#"><i class="fa fa-search"></i></a></li>
-                            <li class="icon-rounded-circle-small mr-2"><a href="#"><i class="fa fa-link"></i></a></li><br><br><br>
+                         
 
                             <a class="icon-rounded-circle-small bg-warning mr-2" href="{{ $ambassadors->Facebook}}">
                                 <i class="fa fa-facebook text-white" aria-hidden="true"></i>
@@ -707,11 +640,14 @@
                               <a class="icon-rounded-circle-small bg-info mr-2" href="{{ $ambassadors->Linkin}}">
                                 <i class="fa fa-linkedin text-white" aria-hidden="true"></i>
                               </a>
+                              <a class="icon-rounded-circle-small bg-info mr-2" href="{{ URL('/AmbassadorProfile/'.$ambassadors->id)}}">
+                                <i class="fa fa-chain text-white" aria-hidden="true"></i>
+                              </a>
                         </ul>
                     </div>
                 </div>
             </div>
-
+          
             
         
         </div>
@@ -776,58 +712,82 @@
   ===================================== -->
   <section class="pt-9 pb-7 py-md-10" id="gallery">
     <div class="container">
-      <div class="section-title justify-content-center mb-2 mb-md-8 wow fadeInUp">
-        <span class="shape shape-left bg-danger"></span>
-        <h2 class="text-white">Meet Our Teachers</h2>
-        <span class="shape shape-right bg-danger"></span>
-      </div>
   
-      <div class="team-slider owl-carousel owl-theme wow fadeInUp" dir="ltr">
-        @foreach($eventtable as $eventables)
-        <div class="card">
-          <div class="position-relative">
-              <a href="blog-single-left-sidebar.html">
-                <div class="fb-page" 
-                data-tabs="events"
-                data-href="https://www.facebook.com/{{ $eventables->Link}}"
-                data-width="270" 
-                         data-hide-cover="true"
-                         data-show-facepile="false"
-                         data-small-header="true""></div>
-              </a>
-         <div class="card-img-overlay p-0 ">
-             <span class="badge badge-danger badge-rounded m-4 pull-right"> 14 <br> Jun</span>
-          </div>
-        </div>
-
-        <div class="card-body border-top-5 px-6 border-danger">
-          <h3 class="card-title">
-           
-           <a class="text-danger text-capitalize d-block text-truncate" href="blog-single-left-sidebar.html">{{ $eventables->title }}</a>
-                          
-          </h3>
-          <ul class="list-unstyled d-flex flex-md-column flex-lg-row">
-           <li class="mr-2">
-                <a class="text-muted" href="blog-single-left-sidebar.html">
-               <i class="fa fa-user mr-2" aria-hidden="true"></i>Jone Doe
-              </a>
-              </li>
-           <li class="mr-2">
-             <a class="text-muted" href="blog-single-left-sidebar.html">
-                <i class="fa fa-comments-o mr-2" aria-hidden="true"></i>4 Comments
-              </a>
-             </li>
-              </ul>
-             <a class="btn btn-link text-hover-danger pl-0" href="blog-single-left-sidebar.html">
-           <i class="fa fa-angle-double-right mr-1" aria-hidden="true"></i> Read More
-           </a>
-            </div>
+  
+      
+     
+<div class="row">
+        <div class="col-sm-9 col-md-6 col-lg-7" ">
+       
+            @if (\Session::has('success'))
+            <div class="alert alert-success">
+              <p>{{ \Session::get('success') }}</p>
+            </div><br />
+           @endif
+         <div class="panel panel-default">
+               <div class="panel-heading">
+                   <h2>Event Calendar</h2>
+               </div>
+               <div class="panel-body" >
+                  {!! $calendar->calendar() !!}
+              </div>
           </div>
           
-              @endforeach
+    
+    
+          {!! $calendar->script() !!}
   
+
+</div>
+        <div class="col-sm-5 col-md-6 col-lg-5 " ">
+                <div class="pull-right wow fadeInRight"> 
+                  <div >
+                    <div class="table-wrapper-scroll-y my-custom-scrollbar ">
+
+                      @foreach($eventtable as $eventables)
+                        <div class="card">
+                          <div class="position-relative">
+                              <a href="blog-single-left-sidebar.html">
+                                <div class="fb-page" 
+                                data-tabs="events"
+                                data-href="https://www.facebook.com/{{ $eventables->Link}}"
+                                data-width="270" 
+                                         data-hide-cover="true"
+                                         data-show-facepile="false"
+                                         data-small-header="true""></div>
+                              </a>
+                       
+                        </div>
+                
+                        <div class="card-body border-top-5 px-6 border-danger">
+                          <h3 class="card-title">
+                           
+                           <a class="text-danger text-capitalize d-block text-truncate" href="blog-single-left-sidebar.html">{{ $eventables->title }}</a>
+                                          
+                          </h3>
+                          <ul class="list-unstyled d-flex flex-md-column flex-lg-row">
+                        
+                         
+                              </ul>
+                             <a class="btn btn-link text-hover-danger pl-0" href="blog-single-left-sidebar.html">
+                           <i class="fa fa-angle-double-right mr-1" aria-hidden="true"></i> Read More
+                           </a>
+                            </div>
+                          </div>
+                          
+                              @endforeach
+                    
+                    </div>
+              </div>
+            </div>
+            </div>
         
-      </div>
+
+     
+        </div>
+    </div>
+
+  </div>
     </div>
   </section>
   
@@ -846,166 +806,86 @@
       </div>
   
      
-        <div class="col-sm-6 col-xs-12 bg-light ">
-          @if (\Session::has('success'))
-          <div class="alert alert-success">
-            <p>{{ \Session::get('success') }}</p>
-          </div><br />
-         @endif
-       <div class="panel panel-default">
-             <div class="panel-heading">
-                 <h2>Event Calendar</h2>
-             </div>
-             <div class="panel-body" >
-                {!! $calendar->calendar() !!}
-            </div>
-        </div>
-        </div>
-  
-  
-        {!! $calendar->script() !!}
-
-
-      </div>
-      <div class="py-7"></div>
-    </div>
-   
- 
     
+    <div class="team-slider owl-carousel owl-theme wow fadeInUp" dir="ltr">
+
+     @foreach($SISAccount as $SISAccounts)
+        <div class="card">
+          <div class="position-relative">
+              <a href="blog-single-left-sidebar.html">
+                <div class="fb-page" 
+                data-tabs="events"
+                data-href="https://www.facebook.com/{{ $SISAccounts->SchoolFBProfile}}"
+                data-width="270" 
+                         data-hide-cover="true"
+                         data-show-facepile="false"
+                         data-small-header="true""></div>
+              </a>
+     
+        </div>
+
+        <div class="card-body border-top-5 px-6 border-danger">
+          <h3 class="card-title">
+           
+           <a class="text-danger text-capitalize d-block text-truncate" href="blog-single-left-sidebar.html">{{ $SISAccounts->SchoolName }}</a>
+                          
+          </h3>
+         
+          
+            </div>
+          </div>
+          
+              @endforeach
+    
+    </div>
+    <div class="py-7"></div>
+  </div>
+ 
   </section>
  <!-- ====================================
   ———	BLOG SECTION
   ===================================== -->
   <section class="pt-9 pb-7 py-md-10" id="gallery">
+    <div class="section-title justify-content-center mb-2 mb-md-8 wow fadeInUp">
+      <span class="shape shape-left bg-danger"></span>
+      <h2 class="text-danger">NEWS</h2>
+      <span class="shape shape-right bg-danger"></span>
+    </div>
       <div class="container">
-          <div class="section-title justify-content-center mb-4 mb-md-8 wow fadeInUp">
-        <span class="shape shape-left bg-info"></span>
-        <h2 class="text-danger">Our Gallery</h2>
-        <span class="shape shape-right bg-info"></span>
-      </div>
-  
-          <div class="d-flex justify-content-center wow fadeInUp">
-        <div id="filters" class="button-group">
-                  <button class="button is-checked" data-filter="*">View All</button>
-            <button class="button" data-filter=".charity">Charity</button>
-            <button class="button" data-filter=".nature">Nature</button>
-            <button class="button" data-filter=".children">Children</button>
-              </div>
-      </div>
-  
-      <div id="gallery-grid">
-              <div class="row grid wow fadeInUp">
-                  <div class="col-md-4 col-lg-3 col-xs-12 element-item nature">
-                      <div class="media media-hoverable justify-content-center">
-                          <div class="position-relative w-100">
-                <img class="media-img w-100 lazyestload" data-src="assets/img/gallery/gallery-img1.jpg" src="assets/img/gallery/gallery-img1.jpg" alt="gallery-img">
-                              <a class="media-img-overlay" data-fancybox="gallery" href="assets/img/gallery/gallery-lg-img1.jpg">
-                    <div class="btn btn-squre">
-                                      <i class="fa fa-search-plus"></i>
-                  </div>
-                </a>
-                          </div>
-                      </div>
-                  </div>
-  
-                  <div class="col-md-4 col-lg-3 col-xs-12 element-item charity">
-                      <div class="media media-hoverable justify-content-center">
-                          <div class="position-relative w-100">
-                              <img class="media-img w-100 lazyestload" data-src="assets/img/gallery/gallery-img2.jpg" src="assets/img/gallery/gallery-img2.jpg" alt="gallery-img">
-                              <a class="media-img-overlay" data-fancybox="gallery" href="assets/img/gallery/gallery-lg-img2.jpg">
-                    <div class="btn btn-squre">
-                                      <i class="fa fa-search-plus"></i>
-                  </div>
-                </a>
-                          </div>
-                      </div>
-                  </div>
-  
-                  <div class="col-md-4 col-lg-3 col-xs-12 element-item children nature">
-                      <div class="media media-hoverable justify-content-center">
-                          <div class="position-relative w-100">
-                              <img class="media-img w-100 lazyestload" data-src="assets/img/gallery/gallery-img3.jpg" src="assets/img/gallery/gallery-img3.jpg" alt="gallery-img">
-                              <a class="media-img-overlay" data-fancybox="gallery" href="assets/img/gallery/gallery-lg-img3.jpg">
-                    <div class="btn btn-squre">
-                                      <i class="fa fa-search-plus"></i>
-                  </div>
-                </a>
-                          </div>
-                      </div>
-                  </div>
-  
-                  <div class="col-md-4 col-lg-3 col-xs-12 element-item children charity">
-                      <div class="media media-hoverable justify-content-center">
-                          <div class="position-relative w-100">
-                              <img class="media-img w-100 lazyestload" data-src="assets/img/gallery/gallery-img4.jpg" src="assets/img/gallery/gallery-img4.jpg" alt="gallery-img">
-                              <a class="media-img-overlay" data-fancybox="gallery" href="assets/img/gallery/gallery-lg-img4.jpg">
-                    <div class="btn btn-squre">
-                                      <i class="fa fa-search-plus"></i>
-                  </div>
-                  </a>
-                          </div>
-                      </div>
-                  </div>
-  
-                  <div class="col-md-4 col-lg-3 col-xs-12 element-item nature">
-                      <div class="media media-hoverable justify-content-center">
-                          <div class="position-relative w-100">
-                              <img class="media-img w-100 lazyestload" data-src="assets/img/gallery/gallery-img5.jpg" src="assets/img/gallery/gallery-img5.jpg" alt="gallery-img">
-                <a class="media-img-overlay" data-fancybox="gallery"
-                href="assets/img/gallery/gallery-lg-img5.jpg">
-                    <div class="btn btn-squre">
-                                      <i class="fa fa-search-plus"></i>
-                  </div>
-                  </a>
-                          </div>
-                      </div>
-                  </div>
-  
-                  <div class="col-md-4 col-lg-3 col-xs-12 element-item children charity">
-                      <div class="media media-hoverable justify-content-center">
-                          <div class="position-relative w-100">
-                              <img class="media-img w-100 lazyestload" data-src="assets/img/gallery/gallery-img6.jpg" src="assets/img/gallery/gallery-img6.jpg" alt="gallery-img">
-                              <a class="media-img-overlay" data-fancybox="gallery" href="assets/img/gallery/gallery-lg-img6.jpg">
-                    <div class="btn btn-squre">
-                                      <i class="fa fa-search-plus"></i>
-                  </div>
-                  </a>
-                          </div>
-                      </div>
-                  </div>
-  
-                  <div class="col-md-4 col-lg-3 col-xs-12 element-item children charity">
-                      <div class="media media-hoverable justify-content-center">
-                          <div class="position-relative w-100">
-                              <img class="media-img w-100 lazyestload" data-src="assets/img/gallery/gallery-img7.jpg" src="assets/img/gallery/gallery-img7.jpg" alt="gallery-img">
-                              <a class="media-img-overlay" data-fancybox="gallery" href="assets/img/gallery/gallery-lg-img7.jpg">
-                    <div class="btn btn-squre">
-                                      <i class="fa fa-search-plus"></i>
-                  </div>
-                  </a>
-                          </div>
-                      </div>
-                  </div>
-  
-                  <div class="col-md-4 col-lg-3 col-xs-12 element-item nature">
-                      <div class="media media-hoverable justify-content-center">
-                          <div class="position-relative w-100">
-                              <img class="media-img w-100 lazyestload" data-src="assets/img/gallery/gallery-img8.jpg" src="assets/img/gallery/gallery-img8.jpg" alt="gallery-img">
-                              <a class="media-img-overlay" data-fancybox="gallery" href="assets/img/gallery/gallery-lg-img8.jpg">
-                    <div class="btn btn-squre">
-                                      <i class="fa fa-search-plus"></i>
-                  </div>
-                  </a>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-      </div>
-  
-          <div class="btn-aria text-center mt-4 wow fadeInUp">
-              <a href="photo-gallery.html" class="btn btn-danger text-uppercase box-shadow">View More</a>
+        <div class="team-slider owl-carousel owl-theme wow fadeInUp" dir="ltr">
+        @foreach($SISAccount as $SISAccounts)
+        <div class="card">
+          <div class="position-relative">
+              <a href="blog-single-left-sidebar.html">
+                <div class="fb-page" 
+                data-tabs="timeline"
+                data-href="https://www.facebook.com/{{ $SISAccounts->SchoolFBProfile}}"
+                data-width="280" 
+                data-height="250"
+                data-hide-cover="true"
+                data-show-facepile="false"
+                 data-small-header="true""></div>
+              </a>
+         
+        </div>
+
+        <div class="card-body border-top-5 px-2 border-danger">
+          <h3 class="card-title">
+           
+           <a class="text-danger text-capitalize d-block text-truncate" href="blog-single-left-sidebar.html">{{ $SISAccounts->SchoolName }}</a>
+                          
+          </h3>
+          <ul class="list-unstyled d-flex flex-md-column flex-lg-row">
+        
+         
+              </ul>
+           
+            </div>
           </div>
-      </div>
+          
+              @endforeach
+            </div>
+          </div>
   </section>
 
 
