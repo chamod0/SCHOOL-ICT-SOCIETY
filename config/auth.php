@@ -15,7 +15,7 @@ return [
 
     'defaults' => [
         'guard' => 'web',
-        'passwords' => 'users',
+        'passwords' => 's_i_s_accounts',
     ],
 
     /*
@@ -38,12 +38,16 @@ return [
     'guards' => [
         'web' => [
             'driver' => 'session',
-            'provider' => 'users',
+            'provider' => 's_i_s_accounts',
+        ],
+        'admin' => [
+            'driver' => 'session',
+            'provider' => 'admins',
         ],
 
         'api' => [
             'driver' => 'token',
-            'provider' => 'users',
+            'provider' => 's_i_s_accounts',
             'hash' => false,
         ],
     ],
@@ -66,9 +70,14 @@ return [
     */
 
     'providers' => [
-        'users' => [
+        's_i_s_accounts' => [
             'driver' => 'eloquent',
-            'model' => App\User::class,
+            'model' => App\SISAccount::class,
+        ],
+
+        'admins' => [
+            'driver' => 'eloquent',
+            'model' => App\AdminUser::class,
         ],
 
         // 'users' => [
@@ -93,8 +102,8 @@ return [
     */
 
     'passwords' => [
-        'users' => [
-            'provider' => 'users',
+        's_i_s_accounts' => [
+            'provider' => 's_i_s_accounts',
             'table' => 'password_resets',
             'expire' => 60,
             'throttle' => 60,

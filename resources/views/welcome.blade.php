@@ -81,7 +81,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    School ICT Socity project
+                    School ICT Socity 
                 </div>
 
                 <div class="links">
